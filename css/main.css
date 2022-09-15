@@ -202,7 +202,18 @@ margin-bottom: 5px;
 #contents .container.login-compl > p{
     margin-bottom: 48px;
 }
-
+.swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    background: rgba(255, 255, 255, 0.5);
+    opacity: 1;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+}
+.swiper-pagination-bullet-active{
+    background: #fff;
+}
 /* 로그인 완료 */
 .login-compl {
     align-items: center;
