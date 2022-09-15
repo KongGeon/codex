@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/resistration2.css">
 
 
 
@@ -39,7 +40,7 @@
                             <li class="header__step2 "><a href="#" >인증방법 안내</a></li>
                         </ul>
                     </li>
-                    <li class="header__step1  temp-menu2" data-menuval="2"><a href="#" >인재정보등록</a>
+                    <li class="header__step1  temp-menu2  menu-on" data-menuval="2"><a href="#" >인재정보등록</a>
                     </li>
                     <li class="sub-menu-ok header__step1  temp-menu3" data-menuval="3"><a href="#" >검색요청</a>
                         <ul>
@@ -68,7 +69,7 @@
     </header>
     <section id="title-banner">
         <div class="title-banner">
-            <h1>검색요청</h1>
+            <h1>인재정보등록</h1>
             <img src="/img/img_main_bn.png" alt="배너이미지">
         </div>
         <div class="row">
@@ -83,90 +84,34 @@
                         <li class="header__step2 "><a href="#" >메뉴</a></li>
                     </ul>
                 </li>
-                <li class="sub-menu-ok header__step1  temp-menu3" data-menuval="3"><a href="#" >서브메뉴</a>
-                    <ul>
-                        <li class="header__step2 "><a href="#" >서브메뉴</a></li>
-                        <li class="header__step2 "><a href="#" >서브메뉴</a></li>
-                    </ul>
-                </li>
             </ul>
         </div>
     </section>
 
     <section id="contents">
         <div class="row">
-            <div class="top-nab-btn btn-wrap">
-                <a href="#" class="btn-bl btn-round">공동인증서 사용 안내</a>
-                <a href="#" class="btn-close btn-round">간편인증 사용 안내</a>
-            </div>
-            <h2 class="contents-title">제목</h2>
+            <h2 class="contents-title">청년인재정보 등록 신청</h2>
             
-            <div class="container">
-                <p class="container__title">타이틀<span class="sub-inline">서브타이틀</span></p>
-                <p class="container__title">타이틀<span class="sub-block">서브타이틀</span></p>
-                <ul class="container__list">
-                    <li>『공공기관의 운영에 관한 법률』의 적용을 받는 공공기관의 기관장 및 임원</li>
-                    <li>『공공기관의 운영에 관한 법률』의 적용을 받는 공공기관의 기관장 및 임원</li>
-                </ul>
+            <div class="container mb40">
+                <p class="container__title">서약내용</p>
+                <div class="box-blue">
+                    <p>본인은 ｢청년기본법 시행령｣ 제20조의3에 따라 청년인재정보를 제공하며, 직접 기재한 내용을 확인하였습니다. 만약 사실이 아닐 경우 이에 대한 책임이 있음을 서약합니다.</p>
+                </div>
+                <div class="checkbox-wrap">
+                    <input type="checkbox" id="ch1">
+                    <label for="ch1" class="check-small"></label>
+                    <label for="ch1" class="agree">서약 내용을 확인하였으며, 이에 동의합니다.</label>
+                </div>
                 <div class="bottom-line"></div>
-
-                <form>
-                    <p>인풋</p>
-                    <input type="text" class="input-nomal w300" placeholder="입력해주세요">
-                    <input type="text" class="input-nomal w100p" placeholder="입력해주세요">
-                    <p>라디오</p>
-                    <input type="radio" name="ra" id="ra1"><label for="ra1" class="radio-nomal">선택1</label>
-                    <input type="radio" name="ra" id="ra2"><label for="ra2" class="radio-nomal">선택2</label>
-                    <p>셀렉트박스</p>
-                    <select name="sel" id="sel" class="select-nomal w300">
-                        <option value="기본선택">기본선택</option>
-                        <option value="선택1">선택1</option>
-                        <option value="선택2">선택2</option>
-                        <option value="선택3">선택3</option>
-                    </select>
-                    <select name="sel" id="sel" class="select-nomal w200">
-                        <option value="기본선택">기본선택</option>
-                        <option value="선택1">선택1</option>
-                        <option value="선택2">선택2</option>
-                        <option value="선택3">선택3</option>
-                    </select>
-                    <p>체크박스</p>
-                    <input type="checkbox" id="ch1"><label for="ch1" class="check-nomal">체크박스</label>
-                    <input type="checkbox" id="ch2"><label for="ch2" class="check-nomal">체크박스</label>
-                    <input type="checkbox" id="ch3"><label for="ch3" class="check-nomal">체크박스</label>
-                    <input type="checkbox" id="ch4"><label for="ch4" class="check-nomal">체크박스</label>
-                    <p>체크박스2</p>
-                    <div class="checkbox-wrap">
-                        <input type="checkbox" id="ch1">
-                        <label for="ch1" class="check-small"></label>
-                        <label for="ch1" class="agree">서약 내용을 확인하였으며, 이에 동의합니다.</label>
-                    </div>
-                    <p>텍스트에어리어</p>
-                    <textarea cols="30" rows="7" class="textarea-nomal w100p" placeholder="내용을 작성해주세요"></textarea>
-                    <p>인풋 date</p>
-                    <input type="text" class="date-nomal w300" placeholder="시작연월">
-                    <p>텍스트박스</p>
-                    <div class="box-blue">
-                        <p>패딩이 사용하는 곳 마다 달라서 그때그때 수정해서 쓰면 됩니다.</p>
-                    </div>
-                    <div class="box-wh">
-                        <p>패딩이 사용하는 곳 마다 달라서 그때그때 수정해서 쓰면 됩니다.</p>
-                    </div>
-                    
-                    <div class="btn-wrap">
-                        <button class="btn-wh btn-nomal">이전</button>
-                        <button class="btn-bl btn-nomal">다음</button>
-                    </div>
-                    <div class="btn-wrap">
-                        <button class="btn-wh btn-round">이전</button>
-                        <button class="btn-bl btn-round">다음</button>
-                    </div>
-                    <div class="btn-wrap">
-                        <button class="btn-close btn-nomal">취소</button>
-                    </div>
-                </form>
+                <p class="container__title">유의사항</p>
+                <div class="box-wh">
+                    <p>귀하의 정보는 「청년기본법」 제15조의2에 따라 정책결정과정에 청년의 참여를 지원하기 위한 목적으로만 활용되며 그 외 다른 목적으로는 활용되지 않습니다. 귀하께서 제공해 주신 개인정보는 「개인정보보호법」, 「청년기본법 시행령」 등 관계 법령에 따라 보호되며 원하시는 경우 언제든지 폐기를 요구할 수 있습니다. 또한, 제공한 정보를 검토하여 불충분하다고 인정되는 등의 경우 청년인재데이터베이스에 등록되지 않을 수 있음을 알려드립니다.</p>
+                </div>
             </div>
-
+            <div class="btn-wrap">
+                <button class="btn-wh btn-round">이전</button>
+                <button class="btn-bl btn-round">등록완료</button>
+            </div>
         </div>
     </section>
     <footer>

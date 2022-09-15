@@ -339,6 +339,35 @@ input[type="number"]::-webkit-inner-spin-button {
     height: 20px;
     background: url(/img/bi_arrow-right-wh.png);
 }
+.box-blue{
+    background: #F1F7FB;
+    border-radius: 14px;
+}
+.box-wh{
+    background: #FFFFFF;
+    border: 1px solid #E2E9EE;
+    border-radius: 14px;
+}
+.check-small{
+    display: inline-block;
+    min-width: 18px;
+    min-height: 18px;
+    background: url(/img/check-small.png) no-repeat;
+    cursor: pointer;
+    margin-right: 6px;
+}
+input[type="checkbox"]:checked + .check-small {
+    background: url(/img/check-small-on.png) no-repeat;
+}
+.check-small+label{
+    cursor: pointer;
+    font-size: 15px;
+    display: inline-block; 
+}
+.checkbox-wrap {
+    display: flex;
+    align-items: center;
+}
 
 
 /* 공통 끝 */
@@ -1038,9 +1067,6 @@ transform: rotate(180deg);
     }
     .title-banner-menu .header__step1 > a {
         width: 100%;
-    }
-    .title-banner-menu .header__step1:last-child > a {
-        border-right: none;
     }
     .go-home {
         display: none;

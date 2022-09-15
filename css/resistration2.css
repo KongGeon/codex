@@ -1,0 +1,39 @@
+
+
+.box-blue, .box-wh {
+    padding: 20px 30px;
+
+}
+
+.box-blue p {
+    text-align: center;
+    color: #555555;
+}
+.container__title {
+    margin-bottom: 20px;
+}
+.check-small+label{
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block; 
+}
+.check-small, input[type="checkbox"]:checked + .check-small{
+    min-width: 24px;
+    height: 24px;
+    background-size: cover;
+}
+.checkbox-wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.box-blue{
+    margin-bottom: 20px;
+}
+.box-wh p {
+    color: #555555;
+    line-height: 28px;
+}
+.mb40{
+    margin-bottom: 40px;
+}
