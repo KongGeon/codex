@@ -64,6 +64,21 @@
 footer {
     margin-top: 0;
 }
+.position2{
+    width: 70%;
+}
+.position2 p {
+    width: 50%;
+}
+.position-img2 {
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    width: 393px;
+}
+.mb56{
+    margin-bottom: 56px;
+}
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (max-width:1023px) {
 
@@ -79,7 +94,7 @@ footer {
     .position p:nth-last-child(2), .position p:nth-last-child(3){
         margin-bottom: 20px;
     }
-    .container:nth-child(2){
+    .container:nth-last-child(2){
         margin-bottom: 0;
     }
     .down-wrap{
@@ -96,5 +111,17 @@ footer {
         flex-direction: column;
         align-items: center;
         text-align: center;
+    }
+    .position-img2 {
+        display: none;
+    }
+    .position2{
+        width: 100%;
+    }
+    .position2 p {
+        width: 100%;
+    }
+    .mb56{
+        margin-bottom: 0;
     }
 }
