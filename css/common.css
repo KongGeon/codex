@@ -300,7 +300,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .bottom-line{
     height: 1px;
     width: 100%;
-    background-color: var(--line2);
+    background-color: #E7EAF1;
     margin: 40px 0;
 }
 
@@ -465,7 +465,7 @@ input[type="checkbox"]:checked + .check-small {
 header{
     position: fixed;
     width: 100%;
-    border-bottom: 1px solid var(--line2);
+    border-bottom: 1px solid #E7EAF1;
     background-color: #fff;
     z-index: 10;
     margin: 0 auto;
@@ -485,7 +485,7 @@ header .row {
 }
 .header__top {
     height: 50px;
-    background-color: var(--main);
+    background-color: #02346B;
     display: flex;
     align-items: center;
 }
@@ -559,6 +559,7 @@ header .row {
     box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15);
     border-radius: 6px;
     overflow: hidden;
+
 }
 .header__menu .header__step1 .header__step2 {
     background-color: #fff;
@@ -595,7 +596,7 @@ header .row {
     font-weight: bold;
 }
 .header__menu .header__step1:hover > a, .header__menu .header__step1 > a:focus , .header__menu >li.header-active > a, .header__menu .header__step1.menu_on, .menu-on > a{
-    color: var(--main2);
+    color: #1776E1;
 }
 .header__menu li:hover ul, .header__menu li ul:hover, .header__menu li.header-active ul {
     display: flex;
@@ -655,11 +656,11 @@ header .row {
     background-size: contain;
     min-width: 60px;
     height: 60px;
-    border-left: 1px solid var(--line2);
+    border-left: 1px solid #E7EAF1;
 
 }
 #title-banner {
-    border: 1px solid var(--line2);
+    border: 1px solid #E7EAF1;
     margin-bottom: 80px;
 
 }
@@ -671,7 +672,7 @@ header .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-left: 1px solid var(--line2);
+    border-left: 1px solid #E7EAF1;
 
     font-family: 'Noto Sans CJK KR';
 font-style: normal;
@@ -687,7 +688,7 @@ line-height: 24px;
     height: 14px;
 }
 .title-banner-menu .header__step1:last-child > a {
-    border-right: 1px solid var(--line2);
+    border-right: 1px solid #E7EAF1;
 
 }
 .title-banner-menu.header__menu .header__step1:nth-last-child(2){
@@ -707,7 +708,7 @@ line-height: 24px;
     font-weight: 600;
     font-size: 28px;
     line-height: 28px;
-    color: var(--main);
+    color: #02346B;
     padding-bottom: 34px;
     border-bottom: 3px solid #ECF0F8;
     position: relative;
@@ -720,7 +721,7 @@ line-height: 24px;
     bottom: -3px;
     width: 100px;
     height: 3px;
-    background-color: var(--main2);
+    background-color: #1776E1;
 }
 /* 배너타이틀 끝*/
 
@@ -875,7 +876,7 @@ color: #02346B;
 }
 .modal-menu .modal__title{
     padding: 18px 20px;
-    border-bottom: 1px solid var(--line);
+    border-bottom: 1px solid #D4D9E4;
     margin-bottom: 0;
 }
 .modal-menu .modal__title h1 {
@@ -897,7 +898,7 @@ color: #02346B;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.05);
 }
 .modal-menu-top a {
-    color: var(--main2);
+    color: #1776E1;
 }
 .modal-menu-top > div:nth-child(1){
     margin-bottom: 20px;
@@ -1198,5 +1199,12 @@ transform: rotate(180deg);
 @media all and (max-width:767px) {
     .select-nomal  {
         width: 100%;
+    }
+}
+
+/* 익스프로러 */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+    .header__menu .header__step1 ul{
+        left: 0;
     }
 }

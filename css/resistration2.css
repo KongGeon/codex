@@ -37,3 +37,46 @@
 .mb40{
     margin-bottom: 40px;
 }
+.register{
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.register > img {
+    width: 50%;
+}
+.register > div {
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    padding: 84px 60px;
+}
+.register__title{
+    font-family: 'Gmarket Sans';
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+    color: #02346B;
+    margin-bottom: 20px;
+    
+}
+.register__info{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    letter-spacing: -0.03em;
+    color: #555555;
+    margin-bottom: 50px;
+}
+
+@media all and (max-width:1023px) {
+
+    .register > img {
+        width: 100%;
+    }
+    .register > div {
+        width: 100%;
+        padding: 36px 40px;
+    }
+}

@@ -65,7 +65,7 @@ margin-left: 10px;
     align-items: center;
     margin-top: 20px;
     padding-bottom: 30px;
-    border-bottom: 1px solid var(--line2);
+    border-bottom: 1px solid #E7EAF1;
     margin-bottom: 30px;
     flex-wrap: wrap;
 }
@@ -232,7 +232,7 @@ line-height: 40px;
 }
 .login-compl p strong {
     font-weight: 500;
-    color: var(--main2);
+    color: #D4D9E4;
 }
 
 .modal-menu-top .login-compl {
@@ -259,7 +259,7 @@ line-height: 40px;
     width: 100%;
     padding: 20px;
     border-radius: 14px;
-    background-color: var(--main2);
+    background-color: #D4D9E4;
     margin-top: 20px;
     display: flex;
     align-items: center;
