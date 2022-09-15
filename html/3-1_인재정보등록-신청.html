@@ -25,7 +25,6 @@
             <div class="row">
                 <a href="#">로그인</a>
                 <a href="#">회원가입</a>
-                <a href="#">ENGLISH</a>
             </div>
         </div>
         <div class="header__bottom">
@@ -96,21 +95,21 @@
     </section>
 
     <section id="contents">
-        <div class="container">
+        <div class="row">
             <h2 class="contents-title">청년인재정보 등록 신청</h2>
                 <form>
                     <div class="container">
                         <p class="container__title">기본정보<span class="sub-inline">정부위원회, 자문단 등 각종 정책결정과정에 청년위원으로 최종 추천되기 전까지 기본정보는 공개되지 않습니다.</span></p>
                         <div class="box-wrap wrap-01">
-                           <div>
+                            <div>
                                 <div class="picture-img"></div>
                                 <div class="button-wrap">
                                     <input type="file" id="picFile">
                                     <label for="picFile">등록</label>
                                     <button>삭제</button>
                                 </div>
-                           </div>
-                           <div>
+                            </div>
+                            <div>
                                     <div class="b-item">
                                         <label for="">성명</label>
                                         <input type="text" class="input-nomal w300" placeholder="성명">
@@ -125,7 +124,7 @@
                                         <label for="genderM" class="radio-nomal">남자</label>
                                         <input type="radio" name="gender" id="genderW">
                                         <label for="genderW" class="radio-nomal">여자</label>
-    
+
                                     </div>
                                     <div class="b-item">
                                         <label for="">연락처</label>
@@ -163,7 +162,7 @@
                                                 </select>
                                         </div>
                                     </div>
-                           </div>
+                            </div>
                         </div>
                     </div>
                     <div class="container">
@@ -196,7 +195,7 @@
                         </div>
                         <div class="bottom-line"></div>
                         <p class="container__title">상세 관심 분야<span class="sub-inline">예: [주거]전월세 비용 경감, [인재양성]신기술 핵심인재 양성, [복지]자산형성지원, [기타]자원봉사 등</span></p>
-                        <div class="wrap-03">
+                        <div class="wrap-03 box-style">
                             <div class="b-item">
                                 <label for="">관심분야</label>
                                 <input type="text" class="input-nomal w300" placeholder="명칭">
@@ -235,49 +234,132 @@
                             <input type="checkbox" id="part6">
                             <label for="part5" class="check-nomal">기타분야</label>
                             <input type="checkbox" id="part6">
-                          
+                            
                         </div>
                     </div>
                     <div class="container">
                         <p class="container__title">학력<span class="sub-inline">재학 중을 포함하여 고등학교 이상의 학력을 기재해 주세요. 해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
-                        <div class="box-wrap wrap-04">
-                            <div class="b-item">
-                                <label for="">학교명</label>
-                                <input type="text" class="input-nomal w300" placeholder="학교명">
+                        <div class="box-wrap wrap-04 box-style">
+                            <div>
+                                <div class="b-item">
+                                    <label for="">학교명</label>
+                                    <input type="text" class="input-nomal w300" placeholder="학교명">
+                                </div>
+                                <div class="b-item">
+                                    <label for="">학위 종류</label>
+                                    <select name="sel" id="degree" class="select-nomal w200">
+                                        <option value="선택">선택</option>
+                                        <option value="선택1">선택1</option>
+                                        <option value="선택2">선택2</option>
+                                        <option value="선택3">선택3</option>
+                                    </select>
+                                </div>
+                                <div class="b-item">
+                                    <label for="">학과/전공명</label>
+                                    <input type="text" class="input-nomal w300" placeholder="학과/전공명">
+                                </div>
                             </div>
-                            <div class="b-item">
-                                <label for="">학위 종류</label>
-                                <select name="sel" id="degree" class="select-nomal w200">
-                                    <option value="선택">선택</option>
-                                    <option value="선택1">선택1</option>
-                                    <option value="선택2">선택2</option>
-                                    <option value="선택3">선택3</option>
-                                </select>
-                            </div>
-                            <div class="b-item">
-                                <label for="">학과/전공명</label>
-                                <input type="text" class="input-nomal w300" placeholder="학과/전공명">
-                            </div>
-                            <div class="b-item">
-                                <label for="">소재지</label>
-                                <input type="text" class="input-nomal w300" placeholder="학교 소재지">
-                            </div>
-                            <div class="b-item">
-                                <label for="">졸업연도</label>
-                                <select name="sel" id="address02" class="select-nomal w200">
-                                    <option value="선택">선택</option>
-                                    <option value="선택1">선택1</option>
-                                    <option value="선택2">선택2</option>
-                                    <option value="선택3">선택3</option>
-                                </select>
-                            </div>
-                            <div class="b-item">
-                                <label for="">비고</label>
-                                <input type="text" class="input-nomal w300" placeholder="비고">
+                            <div>
+                                <div class="b-item">
+                                    <label for="">소재지</label>
+                                    <input type="text" class="input-nomal w300" placeholder="학교 소재지">
+                                </div>
+                                <div class="b-item">
+                                    <label for="">졸업연도</label>
+                                    <select name="sel" id="address02" class="select-nomal w200">
+                                        <option value="선택">선택</option>
+                                        <option value="선택1">선택1</option>
+                                        <option value="선택2">선택2</option>
+                                        <option value="선택3">선택3</option>
+                                    </select>
+                                </div>
+                                <div class="b-item">
+                                    <label for="">비고</label>
+                                    <input type="text" class="input-nomal w300" placeholder="비고">
+                                </div>
                             </div>
                         </div>
-                    </div>    
+                        <div class="btn-wrap">
+                            <button class="add-btn">학력 추가</button>
+                        </div>
+                    </div>  
+                    <div class="bottom-line"></div> 
+                    <div class="container">
+                        <p class="container__title">직종 구분(전∙현직)<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p> 
+                        <div class="box-wrap wrap-02">
+                            <input type="checkbox" id="job1">
+                            <label for="job1" class="check-nomal">일반 사무직</label>
+                            <input type="checkbox" id="job2">
+                            <label for="job2" class="check-nomal">금융ㆍ보험직</label>
+                            <input type="checkbox" id="job3">
+                            <label for="job3" class="check-nomal">연구직</label>
+                            <input type="checkbox" id="job4">
+                            <label for="job4" class="check-nomal">교육직</label>
+                            <input type="checkbox" id="job5">
+                            <label for="job5" class="check-nomal">법률직</label>
+                            <input type="checkbox" id="job6">
+                            <label for="job5" class="check-nomal">사회복지ㆍ종교직</label>
+                            <input type="checkbox" id="job6">
+                            <input type="checkbox" id="job1">
+                            <label for="job1" class="check-nomal">경찰ㆍ소방직</label>
+                            <input type="checkbox" id="job2">
+                            <label for="job2" class="check-nomal">보건ㆍ의료직</label>
+                            <input type="checkbox" id="job3">
+                            <label for="job3" class="check-nomal">농림ㆍ어업직</label>
+                            <input type="checkbox" id="job4">
+                            <label for="job4" class="check-nomal">예술ㆍ디자인ㆍ방송ㆍ스포츠직</label>
+                            <input type="checkbox" id="job5">
+                            <label for="job5" class="check-nomal">미용ㆍ여행ㆍ음식ㆍ숙박직</label>
+                            <input type="checkbox" id="job6">
+                            <label for="job5" class="check-nomal">영업ㆍ판매ㆍ운전직</label>
+                            <input type="checkbox" id="job6">
+                            <input type="checkbox" id="job1">
+                            <label for="job1" class="check-nomal">건설직</label>
+                            <input type="checkbox" id="job2">
+                            <label for="job2" class="check-nomal">설치ㆍ정비ㆍ생산직</label>
+                            <input type="checkbox" id="job3">
+                            <label for="job3" class="check-nomal">전자ㆍ정보통신직</label>
+                            <input type="checkbox" id="job4">
+                            <label for="job4" class="check-nomal">단순노무직</label>
+                            <input type="checkbox" id="job5">
+                            <label for="job5" class="check-nomal">무직</label>
+                            <input type="checkbox" id="job6">
+                            <label for="job5" class="check-nomal">학생</label>
+                            <input type="checkbox" id="job6">
+                            <label for="job5" class="check-nomal">기타</label>
+                            <input type="checkbox" id="job6">
+                            <div class="bottom-line"></div>
+                            <p class="container__title">근무경력(전∙현직)<span class="sub-inline">해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
+                            <div class="box-style wrap-05">
+                                <div>
+                                    <div class="b-item">
+                                        <label for="">직장명</label>
+                                        <input type="text" class="input-nomal w300 mr10" placeholder="직장명">
+                                        <input type="text" class="input-nomal w300" placeholder="부서명">
+                                    </div>
+                                    <div class="b-item">
+                                        <label for="">직위</label>
+                                        <input type="text" class="input-nomal w300" placeholder="직위">
+                                    </div>
+                                </div>
+                                <div class="b-item">
+                                    <label for="">근무기간</label>
+                                    <input type="text" class="date-nomal w300 hasDatepicker" placeholder="시작연월" id="dp1663239751224">
+                                    <span>~</span>
+                                    <input type="text" class="date-nomal w300 hasDatepicker" placeholder="종료연월" id="dp1663239751224">
+                                </div>
+                                <div class="b-item">
+                                    <label for="">학교명</label>
+                                    <input type="text" class="input-nomal w300" placeholder="학교명">
+                                </div>
+                                <div class="b-item">
+                                    <label for="">주요업무</label>
+                                    <input type="text" class="input-nomal w100p" placeholder="주요업무를 작성해 주세요">
+                                </div>
+                            </div>
+                        </div>
                 </form>
+            
         </div>
     </section>
     <footer>

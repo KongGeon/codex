@@ -1,12 +1,16 @@
 
-.container__title {
-    margin-bottom: 20px;
-}
-
 .box-wrap {
     width: 100%;
     display: flex;
 }
+.box-style  {
+    width: 100%;
+    background: #F9FCFF;
+    border: 1px solid #E2E9EE;
+    padding: 20px 30px;
+    border-radius: 14px;
+}
+
 /* 첫번째 섹션 시작 */
 .wrap-01 > div:first-child {
     width: 240px;
@@ -108,10 +112,6 @@
 /* 세번째 섹션 시작 */
 .wrap-03 {
     width: 100%;
-    padding: 20px 30px;
-    background: #F9FCFF;
-    border: 1px solid #E2E9EE;
-    border-radius: 14px;
 }
 .btn-wrap {
     width: 100%;
@@ -134,13 +134,38 @@
 .wrap-04 {
     flex-wrap: wrap;
 }
+.wrap-04 .select-nomal {
+    background-color: #fff;
+}
+.wrap-04 > div {
+    width: 100%;
+    display: flex;
+
+}
+.wrap-04 > div > div:last-child {
+    margin-right: 0;
+}
 .wrap-04 .b-item {
     width: fit-content;
     margin-right: 60px;
 }
 .wrap-04 .b-item > label {
     width: 80px;
+    margin-right: 8px;
+}
+/* 다섯번째 섹션 */
+.wrap-05 > div {
+    width: 100%;
+    display: flex;
+}
+.wrap-05 .b-item {
+    margin-right: 60px;
+}
+.mr10 {
     margin-right: 10px;
+}
+.wrap-05 .b-item span {
+    margin: 0 15px;
 }
 
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
@@ -158,26 +183,25 @@
     .wrap-01 > div:first-child {
         margin-bottom: 20px;
     }
-    .b-item-02 {
-        flex-wrap: wrap;
-    }
-    .b-item-02 input {
-        width: 100%;
-    }
     .b-item-03 > div > select:first-child {
         margin-bottom: 10px;
     }
     .b-item-03 > div > select:last-child {
         margin-left: 88px;
     }
+   
     /* 네번째 섹션 */
-    .wrap-04 .b-item select {
-     
-    }
     .wrap-04 .b-item > label {
         width: fit-content;
         min-width: 80px;
     }
+    .wrap-04 .b-item {
+        width: 100%;
+    }
+    .wrap-04 > div {
+        flex-direction: column;
+    }
+    
     
 } 
 
@@ -185,6 +209,14 @@
 @media all and (max-width:767px) {
     .wrap-01 > div:first-child {
         margin: 0 auto 20px;
+        width: 100%;
+    }
+    
+    .box-style {
+        padding: 16px;
+    }
+    .picture-img {
+        width: 100%;
     }
     .b-item {
         flex-direction: column;
@@ -203,6 +235,16 @@
     .b-item-01 label:nth-of-type(1) {
         width: 100%;
     }
+    .b-item-01 > label:nth-of-type(2) {
+        margin-bottom: 10px;
+    }
+    .b-item-02 {
+        flex-wrap: wrap;
+    }
+    .b-item-02 input {
+        width: 100%;
+    }
+
     .b-item-02 {
         flex-direction: row;
         flex-wrap: wrap;
@@ -214,12 +256,24 @@
     .b-item-02 span {
         line-height: 35px;
     }
+    .b-item-03 > div > select:first-child {
+        margin-bottom: 10px;
+    }
+    .b-item-03 > div > select:last-child {
+        margin-left: 88px;
+    }
     .b-item-03 > div > select:first-child,
     .b-item-03 > div > select:last-child {
         margin-left: 0;
     }
     .b-item-04 .radio-nomal {
         padding: 10px 25px;
+    }
+    .wrap-05 > div {
+        flex-direction: column;
+    }
+    .wrap-05 > div input:nth-of-type(1){
+        margin-bottom: 10px;
     }
   
 }

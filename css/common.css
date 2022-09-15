@@ -216,12 +216,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .date-nomal {
     padding: 10px 15px;
-    background: #FFFFFF;
     border: 1px solid #D4D9E4;
     border-radius: 6px;
     font-size: 16px;
     position: relative;
-    background:url('/img/input-date-icon.png') no-repeat 94% 50%/15px auto;
+    background: #fff, url('/img/input-date-icon.png') no-repeat 94% 50%/15px auto;
 
 }
 .textarea-nomal {
@@ -1171,5 +1170,7 @@ transform: rotate(180deg);
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
 @media all and (max-width:767px) {
-    
+    .select-nomal  {
+        width: 100%;
+    }
 }
