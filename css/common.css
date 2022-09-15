@@ -139,6 +139,9 @@ padding: 13px;
 .top-nab-btn > a:last-child{
     margin-right: 10px;
 }
+.w200 {
+    width: 200px;
+}
 .w300 {
     width: 300px;
 }
@@ -165,6 +168,7 @@ input[type='radio'],input[type='checkbox']{
     box-sizing: border-box;
     white-space: nowrap;
     font-size: 16px;
+    color: #979BA4;
 }
 input[type='radio']:checked + .radio-nomal{
     border: 1px solid #1776E1;
@@ -188,6 +192,8 @@ input[type='radio']:checked + .radio-nomal{
     margin: 0;
     margin-right: 8px;
     display: inline-block;
+    margin-bottom: 10px;
+    color: #979BA4;
 }
 input[type="checkbox"]:checked + .check-nomal{
     border: 2px solid #1776E1;

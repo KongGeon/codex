@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/resistration.css">
+
+
+
+    <title>청년인재데이터베이스</title>
+</head>
+<body>
+    <!-- 스킵네비게이션 -->
+    <div class="skip_nav">
+        <a href="#contents">본문 바로가기</a>
+    </div>
+
+    <!-- 헤더 -->
+    <header>
+        <div class="header__top">
+            <div class="row">
+                <a href="#">로그인</a>
+                <a href="#">회원가입</a>
+                <a href="#">ENGLISH</a>
+            </div>
+        </div>
+        <div class="header__bottom">
+            <div class="row">
+                <a href="/html/index.html" class="header__logo">
+                    <img src="/img/img_logo.png" alt="청년인재데이터베이스">
+                </a>
+                <ul class="header__menu">
+                    <li class="sub-menu-ok header__step1  temp-menu1" data-menuval="1"><a href="#">청년인재데이터베이스</a>   
+                        <ul>
+                            <li class="header__step2 "><a href="#" >청년인재데이터베이스</a></li>
+                            <li class="header__step2 "><a href="#" >등록방법 안내</a></li>
+                            <li class="header__step2 "><a href="#" >인증방법 안내</a></li>
+                        </ul>
+                    </li>
+                    <li class="header__step1  temp-menu2" data-menuval="2"><a href="#" >인재정보등록</a>
+                    </li>
+                    <li class="sub-menu-ok header__step1  temp-menu3" data-menuval="3"><a href="#" >검색요청</a>
+                        <ul>
+                            <li class="header__step2 "><a href="#" >직접검색 요청</a></li>
+                            <li class="header__step2 "><a href="#" >직접검색 요청현황</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu-ok header__step1  temp-menu4" data-menuval="4"><a href="#" >인재검색</a>
+                        <ul>
+                            <li class="header__step2 "><a href="#" >통합검색</a></li>
+                            <li class="header__step2 "><a href="#" >관심인물 관리</a></li>
+                        </ul>
+                    </li>
+                    <li class="sub-menu-ok header__step1  temp-menu5" data-menuval="5"><a href="#" >공지사항</a>
+                        <ul>
+                            <li class="header__step2 "><a href="#" >공지사항</a></li>
+                            <li class="header__step2 "><a href="#" >자주하는 질문(FAQ)</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#" class="ir_pm header__top-menu" onclick="modalOn('modal-menu')">메뉴</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <section id="title-banner">
+        <div class="title-banner">
+            <h1>인재정보등록</h1>
+            <img src="/img/img_main_bn.png" alt="배너이미지">
+        </div>
+        <div class="row">
+            <ul class="header__menu title-banner-menu">
+                <li>
+                    <a href="#" class="go-home ir_pm">홈</a>
+                </li>
+                <li class="sub-menu-ok header__step1  temp-menu1" data-menuval="1"><a href="#">메뉴</a>   
+                    <ul>
+                        <li class="header__step2 "><a href="#" >메뉴</a></li>
+                        <li class="header__step2 "><a href="#" >메뉴</a></li>
+                        <li class="header__step2 "><a href="#" >메뉴</a></li>
+                    </ul>
+                </li>
+                <!-- <li class="sub-menu-ok header__step1  temp-menu3" data-menuval="3"><a href="#" >서브메뉴</a>
+                    <ul>
+                        <li class="header__step2 "><a href="#" >서브메뉴</a></li>
+                        <li class="header__step2 "><a href="#" >서브메뉴</a></li>
+                    </ul>
+                </li> -->
+            </ul>
+        </div>
+    </section>
+
+    <section id="contents">
+        <div class="container">
+            <h2 class="contents-title">청년인재정보 등록 신청</h2>
+                <form>
+                    <div class="container">
+                        <p class="container__title">기본정보<span class="sub-inline">정부위원회, 자문단 등 각종 정책결정과정에 청년위원으로 최종 추천되기 전까지 기본정보는 공개되지 않습니다.</span></p>
+                        <div class="box-wrap wrap-01">
+                           <div>
+                                <div class="picture-img"></div>
+                                <div class="button-wrap">
+                                    <input type="file" id="picFile">
+                                    <label for="picFile">등록</label>
+                                    <button>삭제</button>
+                                </div>
+                           </div>
+                           <div>
+                                    <div class="b-item">
+                                        <label for="">성명</label>
+                                        <input type="text" class="input-nomal w300" placeholder="성명">
+                                    </div>
+                                    <div class="b-item">
+                                        <label for="">생년월일</label>
+                                        <input type="text" class="input-nomal w300" placeholder="주민등록 앞 6자리">
+                                    </div>
+                                    <div class="b-item b-item-01">
+                                        <label for="">성별</label>
+                                        <input type="radio" name="gender" id="genderM">
+                                        <label for="genderM" class="radio-nomal">남자</label>
+                                        <input type="radio" name="gender" id="genderW">
+                                        <label for="genderW" class="radio-nomal">여자</label>
+    
+                                    </div>
+                                    <div class="b-item">
+                                        <label for="">연락처</label>
+                                        <input type="text" class="input-nomal w300" placeholder="'-'를 제외한 숫자">
+                                    </div>
+                                    <div class="b-item b-item-02">
+                                        <label for="">이메일</label>
+                                        <input type="text" class="input-nomal w300" placeholder="아이디">
+                                        <span>@</span>
+                                        <select name="sel" id="emailId" class="select-nomal w300">
+                                            <option value="선택">선택</option>
+                                            <option value="선택1">선택1</option>
+                                            <option value="선택2">선택2</option>
+                                            <option value="선택3">선택3</option>
+                                        </select>
+                                    </div>
+                                    <div class="b-item b-item-01 b-item-03">
+                                        <label for="">활동지역</label>
+                                        <input type="radio" name="aria" id="ariaHome">
+                                        <label for="ariaHome" class="radio-nomal">주거지</label>
+                                        <input type="radio" name="aria" id="ariaOffice">
+                                        <label for="ariaOffice" class="radio-nomal">직장</label>
+                                        <div>
+                                                <select name="sel" id="address01" class="select-nomal w300">
+                                                    <option value="선택">시/도</option>
+                                                    <option value="선택1">선택1</option>
+                                                    <option value="선택2">선택2</option>
+                                                    <option value="선택3">선택3</option>
+                                                </select>
+                                                <select name="sel" id="address02" class="select-nomal w300">
+                                                    <option value="선택">시/군/구</option>
+                                                    <option value="선택1">선택1</option>
+                                                    <option value="선택2">선택2</option>
+                                                    <option value="선택3">선택3</option>
+                                                </select>
+                                        </div>
+                                    </div>
+                           </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="container__title">관심 분야<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p>
+                        <div class="box-wrap wrap-02">
+                            <input type="checkbox" id="interest1">
+                            <label for="interest1" class="check-nomal">고용ㆍ노동 분야</label>
+                            <input type="checkbox" id="interest2">
+                            <label for="interest2" class="check-nomal">창업 분야</label>
+                            <input type="checkbox" id="interest3">
+                            <label for="interest3" class="check-nomal">주거ㆍ교통 분야</label>
+                            <input type="checkbox" id="interest4">
+                            <label for="interest4" class="check-nomal">교육 분야</label>
+                            <input type="checkbox" id="interest5">
+                            <label for="interest5" class="check-nomal">보건ㆍ복지ㆍ가족 분야</label>
+                            <input type="checkbox" id="interest6">
+                            <label for="interest6" class="check-nomal">금융 분야</label>
+                            <input type="checkbox" id="interest7">
+                            <label for="interest7" class="check-nomal">문화ㆍ체육ㆍ관광 분야</label>
+                            <input type="checkbox" id="interest8">
+                            <label for="interest8" class="check-nomal">인권 분야</label>
+                            <input type="checkbox" id="interest9">
+                            <label for="interest9" class="check-nomal">지역발전 분야</label>
+                            <input type="checkbox" id="interest10">
+                            <label for="interest10" class="check-nomal">기후ㆍ환경 분야</label>
+                            <input type="checkbox" id="interest11">
+                            <label for="interest11" class="check-nomal">통일ㆍ안보ㆍ치안 분야</label>
+                            <input type="checkbox" id="interest12">
+                            <label for="interest12" class="check-nomal">기타 분야</label>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <p class="container__title">상세 관심 분야<span class="sub-inline">예: [주거]전월세 비용 경감, [인재양성]신기술 핵심인재 양성, [복지]자산형성지원, [기타]자원봉사 등</span></p>
+                        <div class="wrap-03">
+                            <div class="b-item">
+                                <label for="">관심분야</label>
+                                <input type="text" class="input-nomal w300" placeholder="명칭">
+                            </div>
+                            <div class="b-item">
+                                <label for="">세부내용</label>
+                                <input type="text" class="input-nomal w100p" placeholder="세부 내용을 작성해 주세요">
+                            </div>
+                        </div>
+                        <div class="btn-wrap">
+                            <button class="add-btn">분야 추가</button>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="container__title">참여희망 분야<span class="sub-inline">중복선택 할 수 있습니다.</span></p>
+                        <div class="b-item b-item-01 b-item-04">
+                            <label for="">기관</label>
+                            <input type="radio" name="organization" id="organization01">
+                            <label for="organization01" class="radio-nomal">중앙부처</label>
+                            <input type="radio" name="organization" id="organization02">
+                            <label for="organization02" class="radio-nomal">지방자치단체</label>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <p class="container__title">참여희망 분야 종류<span class="sub-inline">중복선택 할 수 있습니다.</span></p>
+                        <div class="box-wrap wrap-02">
+                            <input type="checkbox" id="part1">
+                            <label for="part1" class="check-nomal">정부위원회</label>
+                            <input type="checkbox" id="part2">
+                            <label for="part2" class="check-nomal">정책 자문</label>
+                            <input type="checkbox" id="part3">
+                            <label for="part3" class="check-nomal">정책 홍보</label>
+                            <input type="checkbox" id="part4">
+                            <label for="part4" class="check-nomal">간담회ㆍ행사</label>
+                            <input type="checkbox" id="part5">
+                            <label for="part5" class="check-nomal">보건ㆍ복지ㆍ가족 분야</label>
+                            <input type="checkbox" id="part6">
+                            <label for="part5" class="check-nomal">기타분야</label>
+                            <input type="checkbox" id="part6">
+                          
+                        </div>
+                    </div>
+                    <div class="container">
+                        <p class="container__title">학력<span class="sub-inline">재학 중을 포함하여 고등학교 이상의 학력을 기재해 주세요. 해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
+                        <div class="box-wrap wrap-04">
+                            <div class="b-item">
+                                <label for="">학교명</label>
+                                <input type="text" class="input-nomal w300" placeholder="학교명">
+                            </div>
+                            <div class="b-item">
+                                <label for="">학위 종류</label>
+                                <select name="sel" id="degree" class="select-nomal w200">
+                                    <option value="선택">선택</option>
+                                    <option value="선택1">선택1</option>
+                                    <option value="선택2">선택2</option>
+                                    <option value="선택3">선택3</option>
+                                </select>
+                            </div>
+                            <div class="b-item">
+                                <label for="">학과/전공명</label>
+                                <input type="text" class="input-nomal w300" placeholder="학과/전공명">
+                            </div>
+                            <div class="b-item">
+                                <label for="">소재지</label>
+                                <input type="text" class="input-nomal w300" placeholder="학교 소재지">
+                            </div>
+                            <div class="b-item">
+                                <label for="">졸업연도</label>
+                                <select name="sel" id="address02" class="select-nomal w200">
+                                    <option value="선택">선택</option>
+                                    <option value="선택1">선택1</option>
+                                    <option value="선택2">선택2</option>
+                                    <option value="선택3">선택3</option>
+                                </select>
+                            </div>
+                            <div class="b-item">
+                                <label for="">비고</label>
+                                <input type="text" class="input-nomal w300" placeholder="비고">
+                            </div>
+                        </div>
+                    </div>    
+                </form>
+        </div>
+    </section>
+    <footer>
+         <div class="row">
+             <div class="footer-top">
+                <a href="#">국무조정실</a>
+                <a href="#">청년정책조정위원회</a>
+                <a href="#">청년포털</a>
+                <a href="#">정부∙시민사회 소통협력 플랫폼</a>
+                <select name="footer-select" id="footer-select">
+                    <option value="기본값">관련사이트 바로가기</option>
+                    <option value="국무조정실">국무조정실</option>
+                    <option value="청년정책조정위원회">청년정책조정위원회</option>
+                    <option value="청년포털">청년포털</option>
+                    <option value="정부∙시민사회 소통협력 플랫폼">정부∙시민사회 소통협력 플랫폼</option>
+                </select>
+             </div>
+             <div class="footer-bottom">
+                <div>
+                    <p>(30103) 세종특별자치시 한누리대로 492 청암빌딩 5층</p>
+                    <span class="footer__line">Tel : 044-200-6349</span>
+                    <span>Fax : 044-865-6331</span>
+                    <p>Copyright © Office for Youth Policy Coordination. All Rights Reserved</p>
+                </div>
+                <div class="footer-logo-wrap">
+                    <a href="#">개인정보보호방침</a>
+                    <img class="footer__logo" src="/img/footer-img.png" alt="국무조정실 청년정책조정실">
+                </div>
+             </div>
+         </div>
+    </footer>
+    <div class="modal">
+        <div class="modal_content w460">
+          <div class="modal__title">
+            <h1>모달타이틀</h1>
+            <button class="modal-close-btn"></button>
+          </div>
+        </div>
+    </div>
+    <div class="modal modal-menu">
+        <div class="modal_content w460">
+            <div class="modal__title">
+                <h1>전체메뉴</h1>
+                <button class="modal-close-btn"></button>
+            </div>
+            <div class="modal-menu-top">
+                <div><span>서비스 이용을 위해 </span><a href="#">로그인</a><span>이 필요합니다.</span></div>
+                <div class="btn-wrap">
+                    <button class="btn-bl btn-nomal">회원가입</button>
+                </div>
+                <button class="one-login-btn">
+                    <img src="/img/one-login-btn.png" alt="디지털원패스로 로그인">
+                </button>
+            </div>
+            <ul class="modal-menu-list">
+                <!-- .menu-step1에 .menu-on 추가하면 메뉴 오픈됩니다 -->
+                <li class="menu-step1 menu-on">
+                    <p>청년인재데이터베이스</p>
+                    <ul>
+                        <li class="menu-step2"><a href="#">청년인재데이터베이스</a></li>
+                        <li class="menu-step2"><a href="#">등록방법 안내</a></li>
+                        <li class="menu-step2"><a href="#">인증방법 안내</a></li>
+                    </ul>
+                </li>
+                <li class="menu-step1"><a href="#">인재정보등록</a></li>
+                <li class="menu-step1 ">
+                    <p>검색요청</p>
+                    <ul>
+                        <li class="menu-step2"><a href="#">직접검색 요청</a></li>
+                        <li class="menu-step2"><a href="#">직접검색 요청현황</a></li>
+                    </ul>
+                </li>
+                <li class="menu-step1">
+                    <p>인재검색</p>
+                    <ul>
+                        <li class="menu-step2"><a href="#">통합검색</a></li>
+                        <li class="menu-step2"><a href="#">관심인물 관리</a></li>
+                    </ul>
+                </li>
+                <li class="menu-step1">
+                    <p>공지사항</p>
+                    <ul>
+                        <li class="menu-step2"><a href="#">공지사항</a></li>
+                        <li class="menu-step2"><a href="#">자주하는 질문(FAQ)</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="/js/main.js"></script>
+</body>
+</html>
