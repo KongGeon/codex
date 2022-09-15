@@ -234,6 +234,8 @@
 }
 .file-upload .file-sel > div {
     width: 100%;
+    display: flex;
+    align-items: center;
 }
 .file-upload .file-sel > div > div {
     width: 14px;
@@ -241,6 +243,17 @@
     background: url(../img/icon-file-upload.svg) no-repeat;
     background-size: contain;
     background-position: center;
+    margin-right: 10px;
+}
+.file-upload .file-sel > div > p {
+    width: 100%;
+}
+.file-upload .file-sel > div > button {
+    width: 22px;
+    height: 22px;
+    background: url(../img/icon-file-del.svg) no-repeat;
+    background-size: contain;
+    background-position: center;  
 }
 
 
@@ -373,6 +386,12 @@
         width: 100%;
         margin-right: 0;
     }
-   
+    /* 첨부파일 */
+    .file-upload {
+        flex-direction: column;
+    }
+    .file-upload label {
+        margin-bottom: 10px;
+    }
     
 }
