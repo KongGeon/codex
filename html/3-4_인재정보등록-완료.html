@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/resistration2.css">
+    <link rel="stylesheet" href="/css/resistration.css">
 
 
 
@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- 스킵네비게이션 -->
-    <div class="skip_nav">
+     <div class="skip_nav" id="skip">
         <a href="#contents">본문 바로가기</a>
     </div>
 
@@ -61,7 +61,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="ir_pm header__top-menu" onclick="modalOn('modal-menu')">메뉴</a>
+                        <a href="#" class="ir_pm header__top-menu pc-only">PC메뉴</a>
+                        <a href="#" class="ir_pm header__top-menu mobile-only" onclick="modalOn('modal-menu')">MOBILE메뉴</a>
                     </li>
                 </ul>
             </div>

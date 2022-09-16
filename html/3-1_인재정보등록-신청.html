@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/css/resistration.css">
+    <link rel="stylesheet" href="/css/dataform.css">
 
 
 
@@ -15,7 +15,7 @@
 </head>
 <body>
     <!-- 스킵네비게이션 -->
-    <div class="skip_nav">
+     <div class="skip_nav" id="skip">
         <a href="#contents">본문 바로가기</a>
     </div>
 
@@ -61,7 +61,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="ir_pm header__top-menu" onclick="modalOn('modal-menu')">메뉴</a>
+                        <a href="#" class="ir_pm header__top-menu pc-only">PC메뉴</a>
+                        <a href="#" class="ir_pm header__top-menu mobile-only" onclick="modalOn('modal-menu')">MOBILE메뉴</a>
                     </li>
                 </ul>
             </div>
@@ -102,7 +103,9 @@
                         <p class="container__title">기본정보<span class="sub-inline">정부위원회, 자문단 등 각종 정책결정과정에 청년위원으로 최종 추천되기 전까지 기본정보는 공개되지 않습니다.</span></p>
                         <div class="box-wrap wrap-01">
                             <div>
-                                <div class="picture-img"></div>
+                                <div class="picture-img">
+                                    <img src="/img/img-description.png" alt="이미지를 첨부해주세요">
+                                </div>
                                 <div class="button-wrap">
                                     <input type="file" id="picFile">
                                     <label for="picFile">등록</label>
@@ -280,7 +283,7 @@
                             </div>
                         </div>
                         <div class="btn-wrap">
-                            <button class="add-btn">경력 추가</button>
+                            <button class="add-btn">학력 추가</button>
                         </div>
                         <div class="bottom-line"></div> 
                         <p class="container__title">직종 구분(전∙현직)<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p> 
@@ -296,36 +299,34 @@
                             <input type="checkbox" id="job5">
                             <label for="job5" class="check-nomal">법률직</label>
                             <input type="checkbox" id="job6">
-                            <label for="job5" class="check-nomal">사회복지ㆍ종교직</label>
+                            <label for="job6" class="check-nomal">사회복지ㆍ종교직</label>
                             <input type="checkbox" id="job6">
-                            <input type="checkbox" id="job1">
-                            <label for="job1" class="check-nomal">경찰ㆍ소방직</label>
-                            <input type="checkbox" id="job2">
-                            <label for="job2" class="check-nomal">보건ㆍ의료직</label>
-                            <input type="checkbox" id="job3">
-                            <label for="job3" class="check-nomal">농림ㆍ어업직</label>
-                            <input type="checkbox" id="job4">
-                            <label for="job4" class="check-nomal">예술ㆍ디자인ㆍ방송ㆍ스포츠직</label>
-                            <input type="checkbox" id="job5">
-                            <label for="job5" class="check-nomal">미용ㆍ여행ㆍ음식ㆍ숙박직</label>
-                            <input type="checkbox" id="job6">
-                            <label for="job5" class="check-nomal">영업ㆍ판매ㆍ운전직</label>
-                            <input type="checkbox" id="job6">
-                            <input type="checkbox" id="job1">
-                            <label for="job1" class="check-nomal">건설직</label>
-                            <input type="checkbox" id="job2">
-                            <label for="job2" class="check-nomal">설치ㆍ정비ㆍ생산직</label>
-                            <input type="checkbox" id="job3">
-                            <label for="job3" class="check-nomal">전자ㆍ정보통신직</label>
-                            <input type="checkbox" id="job4">
-                            <label for="job4" class="check-nomal">단순노무직</label>
-                            <input type="checkbox" id="job5">
-                            <label for="job5" class="check-nomal">무직</label>
-                            <input type="checkbox" id="job6">
-                            <label for="job5" class="check-nomal">학생</label>
-                            <input type="checkbox" id="job6">
-                            <label for="job5" class="check-nomal">기타</label>
-                            <input type="checkbox" id="job6">
+                            <input type="checkbox" id="job7">
+                            <label for="job7" class="check-nomal">경찰ㆍ소방직</label>
+                            <input type="checkbox" id="job8">
+                            <label for="job8" class="check-nomal">보건ㆍ의료직</label>
+                            <input type="checkbox" id="job9">
+                            <label for="job9" class="check-nomal">농림ㆍ어업직</label>
+                            <input type="checkbox" id="job10">
+                            <label for="job10" class="check-nomal">예술ㆍ디자인ㆍ방송ㆍ스포츠직</label>
+                            <input type="checkbox" id="job11">
+                            <label for="job11" class="check-nomal">미용ㆍ여행ㆍ음식ㆍ숙박직</label>
+                            <input type="checkbox" id="job12">
+                            <label for="job12" class="check-nomal">영업ㆍ판매ㆍ운전직</label>
+                            <input type="checkbox" id="job13">
+                            <label for="job13" class="check-nomal">건설직</label>
+                            <input type="checkbox" id="job14">
+                            <label for="job14" class="check-nomal">설치ㆍ정비ㆍ생산직</label>
+                            <input type="checkbox" id="job15">
+                            <label for="job15" class="check-nomal">전자ㆍ정보통신직</label>
+                            <input type="checkbox" id="job16">
+                            <label for="job16" class="check-nomal">단순노무직</label>
+                            <input type="checkbox" id="job17">
+                            <label for="job17" class="check-nomal">무직</label>
+                            <input type="checkbox" id="job18">
+                            <label for="job18" class="check-nomal">학생</label>
+                            <input type="checkbox" id="job19">
+                            <label for="job19" class="check-nomal">기타</label>
                             <div class="bottom-line"></div>
                             <p class="container__title">근무경력(전∙현직)<span class="sub-inline">해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
                             <div class="box-style wrap-05">
@@ -342,9 +343,9 @@
                                 </div>
                                 <div class="b-item b-item-06">
                                     <label for="">근무기간</label>
-                                    <input type="text" class="date-nomal w300 " placeholder="시작연월" id="dp1663239751224">
+                                    <input type="text" class="date-nomal w300 " placeholder="시작연월">
                                     <span>~</span>
-                                    <input type="text" class="date-nomal w300 " placeholder="종료연월" id="dp1663239751224">
+                                    <input type="text" class="date-nomal w300 " placeholder="종료연월">
                                 </div>
                                 <div class="b-item">
                                     <label for="">학교명</label>
@@ -356,7 +357,7 @@
                                 </div>
                             </div>
                             <div class="btn-wrap">
-                                <button class="add-btn">학력 추가</button>
+                                <button class="add-btn">경력 추가</button>
                             </div>
                         </div>
                     </div>  
@@ -374,20 +375,19 @@
                             <input type="checkbox" id="active5">
                             <label for="active5" class="check-nomal">보건ㆍ복지ㆍ가족 분야</label>
                             <input type="checkbox" id="active6">
-                            <label for="active5" class="check-nomal">금융 분야</label>
-                            <input type="checkbox" id="active6">
-                            <input type="checkbox" id="active1">
-                            <label for="active1" class="check-nomal">문화ㆍ체육ㆍ관광 분야</label>
-                            <input type="checkbox" id="active2">
-                            <label for="active2" class="check-nomal">인권 분야</label>
-                            <input type="checkbox" id="active3">
-                            <label for="active3" class="check-nomal">지역발전 분야</label>
-                            <input type="checkbox" id="active4">
-                            <label for="active4" class="check-nomal">기후ㆍ환경 분야</label>
-                            <input type="checkbox" id="active5">
-                            <label for="active5" class="check-nomal">통일ㆍ안보ㆍ치안 분야</label>
-                            <input type="checkbox" id="active6">
-                            <label for="active5" class="check-nomal">기타 분야</label>
+                            <label for="active6" class="check-nomal">금융 분야</label>
+                            <input type="checkbox" id="active7">
+                            <label for="active7" class="check-nomal">문화ㆍ체육ㆍ관광 분야</label>
+                            <input type="checkbox" id="active8">
+                            <label for="active8" class="check-nomal">인권 분야</label>
+                            <input type="checkbox" id="active9">
+                            <label for="active9" class="check-nomal">지역발전 분야</label>
+                            <input type="checkbox" id="active10">
+                            <label for="active10" class="check-nomal">기후ㆍ환경 분야</label>
+                            <input type="checkbox" id="active11">
+                            <label for="active11" class="check-nomal">통일ㆍ안보ㆍ치안 분야</label>
+                            <input type="checkbox" id="active12">
+                            <label for="active12" class="check-nomal">기타 분야</label>
                         </div>
                         <div class="bottom-line"></div>
                         <div class="box-style wrap-05 wrap-06">
@@ -398,9 +398,9 @@
                                 </div>
                                 <div class="b-item b-item-06 b-item-07">
                                     <label for="">활동기간</label>
-                                    <input type="text" class="date-nomal w200 " placeholder="날짜선택" id="dp1663239751224">
+                                    <input type="text" class="date-nomal w200 " placeholder="날짜선택">
                                     <span>~</span>
-                                    <input type="text" class="date-nomal w200 " placeholder="날짜선택" id="dp1663239751224">
+                                    <input type="text" class="date-nomal w200 " placeholder="날짜선택">
                                 </div>
                             </div>
                             <div class="b-item">
@@ -429,13 +429,13 @@
                                 </div>
                                 <div class="b-item b-item-06 b-item-07">
                                     <label for="">구분</label>
-                                    <input type="text" class="input-nomal w200" placeholder="구분">
+                                    <input type="text" class="input-nomal w300" placeholder="구분">
                                 </div>
                             </div>
                             <div>
                                 <div class="b-item w100p">
                                     <label for="">일자</label>
-                                    <input type="text" class="date-nomal w300 " placeholder="날짜선택" id="dp1663239751224">
+                                    <input type="text" class="date-nomal w300 " placeholder="날짜선택">
                                 </div>
                                 <div class="b-item b-item-06 b-item-07">
                                     <label for="">기관명</label>
@@ -478,7 +478,10 @@
                         </div>
                     </div>    
                 </form>
-            
+            <div class="btn-wrap form-btn-wrap">
+                <button class="btn-close btn-round">취소</button>
+                <button class="btn-bl btn-round">다음</button>
+            </div>
         </div>
     </section>
     <footer>

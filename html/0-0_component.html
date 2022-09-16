@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- 스킵네비게이션 -->
-    <div class="skip_nav">
+     <div class="skip_nav" id="skip">
         <a href="#contents">본문 바로가기</a>
     </div>
 
@@ -60,7 +60,8 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="#" class="ir_pm header__top-menu" onclick="modalOn('modal-menu')">메뉴</a>
+                        <a href="#" class="ir_pm header__top-menu pc-only">PC메뉴</a>
+                        <a href="#" class="ir_pm header__top-menu mobile-only" onclick="modalOn('modal-menu')">MOBILE메뉴</a>
                     </li>
                 </ul>
             </div>
