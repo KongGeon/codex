@@ -304,6 +304,9 @@ line-height: 40px;
   
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (max-width:1023px) {
+    .col-8 {
+        margin-bottom: 0;
+    }
     .pc-main {
         display: none;
     }
@@ -313,7 +316,6 @@ line-height: 40px;
     #contents .grid {
         display: flex;
         flex-direction: column-reverse;;
-        grid-gap: 40px;
     }
     #contents {
         padding-top: 40px;
@@ -353,6 +355,9 @@ line-height: 40px;
     }
     .login-wrap-bottom a {
         padding: 0;
+    }
+    .main-link-wrap {
+        margin-bottom: 0;
     }
 } 
 

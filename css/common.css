@@ -1122,7 +1122,7 @@ transform: rotate(180deg);
     }
 }
 
-/* 익스프로러 */
+/* 익스플로러 */
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
     .header__menu .header__step1 ul{
         left: 0;

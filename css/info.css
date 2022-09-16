@@ -95,7 +95,6 @@ footer {
         margin-bottom: 20px;
     }
     .container:nth-last-child(2){
-        margin-bottom: 0;
     }
     .down-wrap{
         justify-content: center;
