@@ -186,6 +186,28 @@ input[type='radio']:checked + .radio-nomal{
     border: 1px solid #1776E1;
     color: #1776E1;
 }
+
+.radio-small{
+    display: flex;
+    cursor: pointer;
+    font-size: 18px;
+line-height: 27px;
+letter-spacing: -0.03em;
+
+color: #333333;
+}
+.radio-small::before{
+    content: '';
+    display: inline-block;
+    background: url(/img/radio_btn.png) no-repeat;
+    width: 20px;
+    height: 20px;
+    margin-top: 4px;
+    margin-right: 4px;
+}
+input:checked + .radio-small:before{
+    background: url(/img/radio_btn_check.png) no-repeat;
+}
 .select-nomal {
     background-color: #FFFFFF;
     border: 1px solid #D4D9E4;
@@ -393,14 +415,17 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .check-small{
     display: inline-block;
-    min-width: 18px;
-    min-height: 18px;
+    min-width: 24px;
+    min-height: 24px;
     background: url(/img/check-small.png) no-repeat;
+    background-size: contain;
     cursor: pointer;
     margin-right: 6px;
 }
 input[type="checkbox"]:checked + .check-small {
     background: url(/img/check-small-on.png) no-repeat;
+    background-size: contain;
+
 }
 .check-small+label{
     cursor: pointer;
@@ -423,7 +448,7 @@ input[type="checkbox"]:checked + .check-small {
     border-bottom: 1px solid #ECF0F8;
 }
 .table-nomal-th {
-    width: 300px;
+    min-width: 300px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -701,7 +726,7 @@ header .row {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -761,7 +786,7 @@ line-height: 24px;
     text-align: left;
 }
 .contents-title {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -912,7 +937,7 @@ display: none;
     margin-bottom: 30px;
   }
   .modal__title h1 {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
 font-style: normal;
 font-weight: 400;
 font-size: 22px;
@@ -1026,7 +1051,44 @@ transform: rotate(180deg);
 /* 모바일 메뉴 끝 */
 
 
+/* 모달 */
 
+.input-button-wrap {
+    display: flex;
+    margin-bottom: 10px;
+}
+.input-button-wrap input {
+    margin-right: 10px;
+    width: 100%;
+}
+.input-button-wrap .btn-nomal {
+min-width: 120px;
+}
+.modal-title-small {
+    font-weight: 500;
+font-size: 16px;
+line-height: 26px;
+margin-bottom: 10px;
+}
+.input-button-val {
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+}
+.input-button-val strong{
+    color: #1776E1;
+}
+
+.modal .btn-wrap{
+    justify-content: center;
+}
+.modal .w675{
+    width: 675px;
+}
+
+
+/* 모달 끝 */
 
 
 

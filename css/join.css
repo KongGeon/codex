@@ -122,7 +122,20 @@ font-size: 20px;
 line-height: 30px;
 margin-bottom: 20px;
 }
-
+.join3-title strong.color-red {
+    color: #FF0000;
+}
+.agree-wrap {
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+.agree-wrap  span {
+    font-size: 18px;
+line-height: 27px;
+color: #333333;
+}
 .join4-top {
     display: flex;
     justify-content: space-between;
@@ -130,7 +143,9 @@ margin-bottom: 20px;
 .w160 {
     width: 160px;
 }
-
+.mr20  {
+    margin-right: 20px;
+}
 .join4 .input-nomal, .join4 .select-nomal {
     margin-right: 10px;
 }
@@ -172,10 +187,38 @@ margin-left: 20px;
 
 .b-item-03 > div {
     width: auto;
+    margin-top: 0;
 }
 .b-item-03 > div > select:first-child {
     margin-left: 0;
 }
+
+.join4 > .box-blue:nth-child(1){
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 40px;
+    border: 1px solid #E2E9EE;
+}
+.join4 > .box-blue:nth-child(1) p {
+    line-height: 26px;
+}
+.join4 .box-blue:last-child{
+    margin-top: 40px;
+}
+
+/* 모달 */
+
+.modal .box-blue{
+    padding: 15px;
+    border: 1px solid #E2E9EE;
+}
+.modal .box-blue li {
+    line-height: 26px;
+}
+.modal .mb30{
+    margin-bottom: 30px;
+}   
+
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (max-width:1023px) {
 .join1 .box-wh{
