@@ -1,33 +1,6 @@
-.position{
-    padding: 40px 60px;
-    background: #F1F7FB;
-    border-radius: 14px;
-    margin-top: 20px;
-    position: relative;
-}
-.position p {
-    color: #555555;
-    margin-bottom: 20px;
-}
+@charset "utf-8";
 .position p:nth-last-child(1), .position p:nth-last-child(2), .position p:nth-last-child(3){
     margin-bottom: 0;
-}
-
-.position p::before{
-    content: '';
-    background: url(/img/ckeck-blue.png) no-repeat;
-    width: 18px;
-    height: 18px;
-    display: inline-block;
-    margin-right: 10px;
-}
-.position__list {
-    display: flex;
-    width: 90%;
-    flex-wrap: wrap;
-}
-.position3 p {
-    width: 33%;
 }
 .position-img1 {
     width: 246px;
@@ -82,20 +55,8 @@ footer {
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (max-width:1023px) {
 
-    .position-img1{
-        display: none;
-    }
-    .position {
-        padding: 20px 30px;
-    }
-    .position3 p {
-        width: 100%;
-    }
-    .position p:nth-last-child(2), .position p:nth-last-child(3){
-        margin-bottom: 20px;
-    }
-    .container:nth-last-child(2){
-    }
+   
+
     .down-wrap{
         justify-content: center;
         flex-direction: column;
