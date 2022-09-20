@@ -7,9 +7,10 @@
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/common.css">
-    <!-- 스와이퍼 -->
-    <link rel="stylesheet" href="/css/swiper.css">
-    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/dataform.css">
+    <link rel="stylesheet" href="/css/join.css">
+
+
 
     <title>청년인재데이터베이스</title>
 </head>
@@ -23,7 +24,7 @@
     <header>
         <div class="header__top">
             <div class="row">
-                <a href="#">마이페이지</a>
+                <a href="#">로그인</a>
                 <a href="#">회원가입</a>
             </div>
         </div>
@@ -68,82 +69,71 @@
             </div>
         </div>
     </header>
-    <section id="slide-banner">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img class="pc-main" src="/img/img_main_bn-01.png" srcset="/img/img_main_bn-01@2x.png 2x, /img/img_main_bn-01@2x.png 3x " alt="청년의 꿈을 응원하는 청년인재데이터베이스">
-                    <img class="mobile-main" src="/img/img_main_bn-01-mobile.png" srcset="/img/img_main_bn-01-mobile@2x.png 2x, /img/img_main_bn-01-mobile@2x.png 3x " alt="청년의 꿈을 응원하는 청년인재데이터베이스">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc-main" src="/img/img_main_bn-02.png" srcset="/img/img_main_bn-02@2x.png 2x, /img/img_main_bn-02@2x.png 3x" alt="더 많은 청년들의 목소리를 담기위해!">
-                    <img class="mobile-main" src="/img/img_main_bn-02-mobile.png" srcset="/img/img_main_bn-02-mobile@2x.png 2x, /img/img_main_bn-02-mobile@2x.png 3x" alt="더 많은 청년들의 목소리를 담기위해!">
-                </div>
-                <div class="swiper-slide">
-                    <img class="pc-main" src="/img/img_main_bn-03.png" srcset="/img/img_main_bn-03@2x.png 2x, /img/img_main_bn-03@2x.png 3x" alt="시작부터 마지막까지 모든 과정을 청년과 함께!">
-                    <img class="mobile-main" src="/img/img_main_bn-03-mobile.png" srcset="/img/img_main_bn-03-mobile@2x.png 2x, /img/img_main_bn-03-mobile@2x.png 3x" alt="시작부터 마지막까지 모든 과정을 청년과 함께!">
-                </div>
-            </div>
+    <section id="title-banner">
+        <div class="title-banner">
+            <h1>회원가입</h1>
+            <img src="/img/img_main_bn.png" alt="배너이미지">
         </div>
     </section>
 
     <section id="contents">
-        <div class="row grid">
-            <div class="container item col-8 m960-col-12">
-                <h2 class="contents-title">청년인재데이터베이스 소개</h2>
-                <p>
-                    청년인재데이터베이스는 국가공무원법 제19조의3에 의하여 대한민국 정부의 주요직위 인선 시 우수인재를 임용할 수 있도록 공직후보자에 대한 정보를 수집하고 관리하는 국가인물정보관리 시스템입니다. <br>
-1999년 구축하여 현재 사회 각 분야 전문가 30만 여명이 수록되어 있습니다. 청년인재데이터베이스는 국가공무원법 제19조의3에 의하여 대한민국 정부의 주요직위 인선 시 우수인재를 임용할 수 있도록 공직후보자에 대한 정보를 수집하고 관리하는 국가인물정보관리 시스템입니다. <br>
-1999년 구축하여 현재 사회 각 분야 전문가 30만 여명이 수록되어 있습니다.<br>
-청년인재데이터베이스는 국가공무원법 제19조의3에 의하여 대한민국 정부의<br> 
-주요직위 인선 시 우수인재를 임용할 수 있도록 공직후보자에 대한 정보를<br> 
-수집하고 관리하는 국가인물정보관리 시스템입니다. 
-                </p>
-                <a href="#" class="more-btn more-btn-bl">자세히보기</a>
-                <img class="contents__img" src="/img/main-img.png" alt="소개이미지">
-            </div>
-            <div class="container item col-4 m960-col-12 login-compl">
-                <div class="user-photo"></div>
-                <p><strong>김서아</strong> 님,<br>좋은 하루 보내세요!</p>
-                
-                <div class="btn-wrap">
-                    <button class="btn-bl btn-nomal btn-full">나의 인재정보 등록</button>
-                </div>
-                <div class="btn-wrap">
-                    <button class="btn-wh btn-nomal">마이페이지</button>
-                    <button class="btn-close btn-nomal">로그아웃</button>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="contents2">
-        <div class="row grid">
-            <div class="container item col-6 m960-col-12 notice">
-                <h2 class="contents-title">공지사항</h2>
-                <div class="notice-top">
-                    <div class="notice-date">
-                        <p>20</p>
-                        <span>2022.06</span>
+        <div class="row">
+            <h2 class="contents-title">회원가입 내역</h2>
+                <form>
+                    <div class="container join4">
+                        <div class="box-blue">
+                            <p>
+                                국무조정실 청년정책조정실은 개인정보처리방침에 의해 입력하신 정보를 안전하게 보호하고 있습니다.<br>
+                                인사상 목적 또는 공직에서의 직무수행과 관련된 전문분야의 지식,기술, 경험 등의 활용을 위하여 필요한 경우에만 사용하시기 바랍니다.
+                            </p>
+                        </div>
+                        <div class="join-info">
+                            <div class="b-item">
+                                <label for="">아이디</label>
+                                <input type="text" readonly value="admin2022" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">사용자명</label>
+                                <input type="text" readonly value="홍길동" class="input-nomal w300">
+                            </div>
+                        </div>
+                        <div class="join-info">
+                            <div class="b-item">
+                                <label for="">소속기관</label>
+                                <input type="text" readonly value="국무조정실「청년정책조정실」" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">부서명</label>
+                                <input type="text" readonly value="부서명" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">직장전화</label>
+                                <input type="tel" readonly value="042-123-4567" class="input-nomal w300">
+                            </div>
+                        </div>
+                        <div class="join-info">
+                            <div class="b-item">
+                                <label for="">대표전화</label>
+                                <input type="tel" readonly value="010-1234-5678" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">이메일</label>
+                                <input type="email" readonly value="admin2022@email.com" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">IP주소</label>
+                                <input type="text" readonly value="123.123.123" class="input-nomal w300">
+                            </div>
+                        </div>
                     </div>
-                    <a href="#">
-                        <span class="line2"><strong>공지</strong>청년인재DB 20년 대한민국의 인재를 모으다</span>
-                        <span class="line2">국가인재DB 구축 20주년을 맞아 그동안의 국가인재DB 주요 성과 등을 정리하고
-                            미래 발전방향을 제시</span>
-                    </a>
-                </div>
-                <div class="notice-bottom">
-                    <a href="#"><span class="line1">청년인재데이터베이스 인물정보 [등록]하는 방법 및 서식</span><span>2022-02-11</span></a>
-                    <a href="#"><span class="line1">(공공기관) 청년인재DB 직접검색 매뉴얼 및 서약서 등 서식</span><span>2022-02-11</span></a>
-                    <a href="#"><span class="line1">청년인재데이터베이스 인물정보 [활용]하는 방법 및 서식</span><span>2022-02-11</span></a>
-                    <a href="#"><span class="line1">청년인재DB 20년 대한민국의 인재를 모으다청년인재DB 20년 대한민국의 인재를 모으다</span><span>2022-02-11</span></a>
-                </div>
-            </div>
-            <div class="container item col-6 m960-col-12 main-link-wrap">
-                <img class="pc-main" src="/img/main-link.png" alt="청년이 바꾼 오늘, 청년이 만든 내일">
-                <img class="mobile-main" src="/img/main-link-mobile.png" alt="청년이 바꾼 오늘, 청년이 만든 내일">
-                <a href="#" class="more-btn more-btn-wh">방문하기</a>
-
-            </div>
+                    <div class="btn-wrap form-btn-wrap">
+                        <button class="btn-wh btn-round print-btn">가입내역 인쇄</button>
+                        <button class="btn-bl btn-round">완료</button>
+                    </div>
+                </div>   
+                
+            </form>
+            
         </div>
     </section>
     <footer>
@@ -175,7 +165,71 @@
              </div>
          </div>
     </footer>
-    <!-- .modal-menu는 모바일에서만 열려야 합니다 -->
+    <div class="modal modal-id-check">
+        <div class="modal_content w460">
+            <div class="modal__title">
+                <h1>아이디 중복 확인</h1>
+                <button class="modal-close-btn ir_pm">닫기</button>
+            </div>
+            <div class="box-blue mb30">
+                <ul class="container__list">
+                    <li>사용하실 아이디를 입력하고 버튼을 클릭하세요.</li>
+                    <li>영문, 숫자로 조합하여 6~12자로 사용할 수 있습니다.</li>
+                </ul>
+            </div>
+            <p class="modal-title-small">아이디 검색</p>
+            <div class="input-button-wrap">
+                <input type="text" class="input-nomal" placeholder="아이디 입력 후 중복 검색">
+                <button  type='button' class="btn-wh btn-nomal">중복 검색</button>
+            </div>
+            <p class="input-button-val"><strong>admin2022</strong>은(는) 사용하실 수 있습니다.</p>
+            <div class="btn-wrap">
+                <button class="btn-bl btn-round w200">아이디 사용하기</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal modal-organization-check">
+        <div class="modal_content w675">
+            <div class="modal__title">
+                <h1>기관 조회</h1>
+                <button class="modal-close-btn ir_pm">닫기</button>
+            </div>
+            <div class="input-button-wrap">
+                <input type="text" class="input-nomal" placeholder="검색어를 입력해주세요">
+                <button  type='button' class="btn-wh btn-nomal">검색</button>
+            </div>
+            <p class="table-val-num">전체 <span>1</span>건</ㅔ>
+            <table class="modal-table">
+                <caption>기관 조회 결과</caption>
+                <tr>
+                    <th class="table-check-wrap">
+                        <input type="checkbox" id="ch-all">
+                        <label for="ch-all" class="check-small"></label>
+                    </th>
+                    <th>기관명</th>
+                </tr>
+                <tr>
+                    <td class="table-check-wrap">
+                        <input type="checkbox" id="table-ch1">
+                        <label for="table-ch1" class="check-small"></label>
+                    </td>
+                    <td>국무조정실「청년정책조정실</td>
+                </tr>
+            </table>
+            <div class="btn-wrap">
+                <button class="btn-bl btn-round w200">완료</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal_content w460">
+            <div class="modal__title">
+                <h1>모달타이틀</h1>
+                <button class="modal-close-btn ir_pm">닫기</button>
+            </div>
+            
+        </div>
+    </div>
     <div class="modal modal-menu">
         <div class="modal_content w460">
             <div class="modal__title">
@@ -183,15 +237,13 @@
                 <button class="modal-close-btn ir_pm">닫기</button>
             </div>
             <div class="modal-menu-top">
-                <div class="login-compl">
-                    <div class="user-photo"></div>
-                    <p><strong>김서아</strong> 님,<br>좋은 하루 보내세요!</p>
-                    <div class="login-compl__btn-wrap">
-                        <a href="#" class="login-compl__btn1">인증서관리</a>
-                        <a href="#" class="login-compl__btn2">나의 인재정보</a>
-                        <a href="#" class="login-compl__btn3">마이페이지</a>
-                    </div>
+                <div><span>서비스 이용을 위해 </span><a href="#">로그인</a><span>이 필요합니다.</span></div>
+                <div class="btn-wrap">
+                    <button class="btn-bl btn-nomal">회원가입</button>
                 </div>
+                <button class="one-login-btn">
+                    <img src="/img/one-login-btn.png" alt="디지털원패스로 로그인">
+                </button>
             </div>
             <ul class="modal-menu-list">
                 <!-- .menu-step1에 .menu-on 추가하면 메뉴 오픈됩니다 -->
@@ -233,9 +285,5 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
-
-    <!-- 스와이퍼 -->
-    <script src="/js/swiper.min.js"></script>
-    <script src="/js/swiper.js"></script>
 </body>
 </html>

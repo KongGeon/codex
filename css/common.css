@@ -20,7 +20,7 @@
 
 /* 공통 */
 
-section, header {
+section, header, footer {
     min-width: 1400px;
 }
 p{
@@ -786,7 +786,7 @@ line-height: 24px;
     text-align: left;
 }
 .contents-title {
-    font-family: 'GmarketSansMedium';
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -1063,6 +1063,7 @@ transform: rotate(180deg);
 }
 .input-button-wrap .btn-nomal {
 min-width: 120px;
+width: 120px;
 }
 .modal-title-small {
     font-weight: 500;
@@ -1086,8 +1087,52 @@ margin-bottom: 10px;
 .modal .w675{
     width: 675px;
 }
-
-
+.modal-table {
+    width: 100%;
+    text-align: center;
+    border-spacing: 0px;
+}
+.table-check-wrap{
+    width: 60px;
+}
+.modal-table th, .modal-table td {
+    padding: 16px;
+}
+.modal-table th {
+    border-top: 2px solid #02346B;
+    background: #F3F7FA;
+    border-bottom: 1px solid #D4D9E4;
+    border-right: 1px solid #D4D9E4;
+}
+.modal-table th:last-child, .modal-table td:last-child{
+    border-right: none;
+}
+.modal-table td {
+    border-bottom: 1px solid #D4D9E4;
+    border-right: 1px solid #D4D9E4;
+}
+.modal-table .check-small{
+    background: url(/img/table-checkbox.png) no-repeat;
+    margin-right: 0;
+    background-size: contain;
+}
+.modal-table input:checked + .check-small{
+    background: url(/img/table-checkbox-on.png) no-repeat;
+    background-size: contain;
+}
+.modal-table caption{
+    display: none;
+}
+.table-val-num {
+    margin-bottom: 12px;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+.table-val-num span {
+    color: #1776E1;
+}
 /* 모달 끝 */
 
 
@@ -1233,7 +1278,7 @@ margin-bottom: 10px;
     .modal__title {
         padding-bottom: 18px;
     }
-    section, header{
+    section, header, footer{
         min-width:auto;
     }
     
@@ -1290,6 +1335,9 @@ margin-bottom: 10px;
     }
     .table-nomal .container__list {
         width: auto;
+    }
+    .modal .w675 {
+        width: 100%;
     }
 } 
 
