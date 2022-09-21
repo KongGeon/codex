@@ -31,6 +31,7 @@
 .join1 .position__list{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .join1 .position__list p:last-child{
     margin-bottom: 0;
