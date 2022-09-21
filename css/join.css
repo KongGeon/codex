@@ -31,6 +31,7 @@
 .join1 .position__list{
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 .join1 .position__list p:last-child{
     margin-bottom: 0;
@@ -205,6 +206,13 @@ margin-left: 20px;
 .join4 .box-blue:last-child{
     margin-top: 40px;
 }
+.join-info {
+    display: flex;
+    justify-content: flex-start;
+}
+.join-info .b-item{
+    width: 33.3%;
+}
 
 /* 모달 */
 
@@ -218,7 +226,19 @@ margin-left: 20px;
 .modal .mb30{
     margin-bottom: 30px;
 }   
-
+.print-btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.print-btn::before{
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background: url(/img/print.png) no-repeat;
+    margin-right: 8px;
+}
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (max-width:1023px) {
 .join1 .box-wh{
@@ -291,5 +311,11 @@ margin-left: 20px;
 .b-item {
     flex-direction: column;
     align-items: flex-start;
+}
+.join-info {
+    flex-wrap: wrap;
+}
+.join-info .b-item{
+    width: 100%;
 }
 }

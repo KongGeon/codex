@@ -155,7 +155,7 @@
                         </div>
                         <div class="b-item">
                             <label for="">IP주소</label>
-                            <input type="number" class="input-nomal w300" placeholder="123.123.123">
+                            <input type="text" class="input-nomal w300" placeholder="123.123.123">
                         </div>
                         <div class="box-blue">
                             <p>※ 상기 본인은 청년인재데이터베이스에 입력하는 정보가 모두 사실이며, 허위 사실을 입력한 경우 향후 민∙형사상 책임을 질 것을 서약합니다.</p>
@@ -226,7 +226,7 @@
             </div>
             <p class="input-button-val"><strong>admin2022</strong>은(는) 사용하실 수 있습니다.</p>
             <div class="btn-wrap">
-                <button class="btn-bl btn-round">아이디 사용하기</button>
+                <button class="btn-bl btn-round w200">아이디 사용하기</button>
             </div>
         </div>
     </div>
@@ -240,16 +240,27 @@
                 <input type="text" class="input-nomal" placeholder="검색어를 입력해주세요">
                 <button  type='button' class="btn-wh btn-nomal">검색</button>
             </div>
-            <table>
+            <p class="table-val-num">전체 <span>1</span>건</ㅔ>
+            <table class="modal-table">
+                <caption>기관 조회 결과</caption>
                 <tr>
-                    <th></th>
+                    <th class="table-check-wrap">
+                        <input type="checkbox" id="ch-all">
+                        <label for="ch-all" class="check-small"></label>
+                    </th>
                     <th>기관명</th>
                 </tr>
                 <tr>
-                    <td></td>
-                    <td>기관명</td>
+                    <td class="table-check-wrap">
+                        <input type="checkbox" id="table-ch1">
+                        <label for="table-ch1" class="check-small"></label>
+                    </td>
+                    <td>국무조정실「청년정책조정실</td>
                 </tr>
             </table>
+            <div class="btn-wrap">
+                <button class="btn-bl btn-round w200">완료</button>
+            </div>
         </div>
     </div>
     <div class="modal">
@@ -265,7 +276,7 @@
         <div class="modal_content w460">
             <div class="modal__title">
                 <h1>전체메뉴</h1>
-                <button class="modal-close-btn"></button>
+                <button class="modal-close-btn ir_pm">닫기</button>
             </div>
             <div class="modal-menu-top">
                 <div><span>서비스 이용을 위해 </span><a href="#">로그인</a><span>이 필요합니다.</span></div>

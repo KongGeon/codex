@@ -78,93 +78,57 @@
 
     <section id="contents">
         <div class="row">
-            <h2 class="contents-title">청년인재정보 등록 신청</h2>
+            <h2 class="contents-title">회원가입 내역</h2>
                 <form>
                     <div class="container join4">
-                        <div class="join4-top">
-                            <div class="b-item">
-                                <label for="">성명</label>
-                                <input type="text" class="input-nomal w300" value="김시아" readonly="readonly" placeholder="성명" onfocus="this.blur()">
-                            </div>
-                            <div class="b-item">
-                                <label for="">생년월일</label>
-                                <input type="text" class="input-nomal w300" value="19910101" readonly="readonly" placeholder="주민등록 앞 6자리" onfocus="this.blur()">
-                            </div>
-                            <div class="b-item b-item-01">
-                                <label for="">성별</label>
-                                <input type="text" class="input-nomal w300" value="여자" readonly="readonly" placeholder="성별" onfocus="this.blur()">
-                            </div>
-                        </div>
-                        <div class="bottom-line"></div>
-
-                        <div class="b-item">
-                            <label for="">아이디</label>
-                            <div class="join4-id">
-                                <input type="text" class="input-nomal w300" placeholder="아이디 입력 후 중복확인">
-                                <button type="button" class="btn-bl btn-nomal" onclick="modalOn('modal-id-check')">중복확인</button>
-                            </div>
-                            <span>영문, 숫자로 조합하여 6~12자로 사용할 수 있습니다.</span>
-                        </div>
-                        <div class="b-item">
-                            <label for="">비밀번호</label>
-                            <input type="password" class="input-nomal w300" placeholder="비밀번호">
-                            <span>영문, 숫자, 특수문자로 조합하여 10~15자로 사용할 수 있습니다.(사용 가능한 특수문자: ~ ! @ # $ % ^ *)</span>
-                        </div>
-                        <div class="b-item">
-                            <label for="" class="ir_pm">비밀번호 확인</label>
-                            <input type="password" class="input-nomal w300" placeholder="비밀번호 확인">
-                            <span>비밀번호를 다시 한 번 입력합니다.</span>
-                        </div>
-                        <div class="bottom-line"></div>
-
-                        <div class="b-item b-item-03">
-                            <label for="">전화번호</label>
-                            <div>
-                                <select name="sel" id="emailId" class="select-nomal w160">
-                                    <option value="선택">선택</option>
-                                    <option value="02">02</option>
-                                </select>
-                                <input type="number" class="input-nomal w160">
-                                <input type="number" class="input-nomal w160">
-                            </div>
-                        </div>
-                        <div class="b-item b-item-03">
-                            <label for="">휴대전화</label>
-                            <div>
-                                <select name="sel" id="emailId" class="select-nomal w160">
-                                    <option value="선택">선택</option>
-                                    <option value="010">010</option>
-                                    <option value="011">011</option>
-                                </select>
-                                <input type="number" class="input-nomal w160">
-                                <input type="number" class="input-nomal w160">
-                            </div>
-                        </div>
-                        <div class="b-item b-item-02">
-                            <label for="">이메일</label>
-                            <input type="text" class="input-nomal w300 m0" placeholder="아이디">
-                            <span>@</span>
-                            <select name="sel" id="emailId" class="select-nomal w300">
-                                <option value="선택">선택</option>
-                                <option value="선택1">선택1</option>
-                                <option value="선택2">선택2</option>
-                                <option value="선택3">선택3</option>
-                            </select>
-                        </div>
                         <div class="box-blue">
-                            <p>※ 상기 본인은 청년인재데이터베이스에 입력하는 정보가 모두 사실이며, 허위 사실을 입력한 경우 향후 민∙형사상 책임을 질 것을 서약합니다.</p>
-                            <p>※ 키보드보안 프로그램 설치 없이도 서비스를 이용할 수 있습니다. 키보드보안 프로그램을 설치하지 않을 경우 보안이 취약할 수 있습니다.</p>
-                            <p>※ 키보드보안 프로그램 사용을 원할 경우 아래 체크박스에 동의해주시기 바랍니다.</p>
-                            <div class="checkbox-wrap">
-                                <input type="checkbox" id="ch1">
-                                <label for="ch1" class="check-small"></label>
-                                <label for="ch1" class="agree">키보드보안 프로그램 사용<span class="color-blue">(사용 선택 후 키보드보안이 적용된 다른 화면에서는 사용으로 자동 선택됩니다.)</span></label>
+                            <p>
+                                국무조정실 청년정책조정실은 개인정보처리방침에 의해 입력하신 정보를 안전하게 보호하고 있습니다.<br>
+                                인사상 목적 또는 공직에서의 직무수행과 관련된 전문분야의 지식,기술, 경험 등의 활용을 위하여 필요한 경우에만 사용하시기 바랍니다.
+                            </p>
+                        </div>
+                        <div class="join-info">
+                            <div class="b-item">
+                                <label for="">아이디</label>
+                                <input type="text" readonly="readonly"  onfocus="this.blur()" value="admin2022" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">사용자명</label>
+                                <input type="text" readonly="readonly"  onfocus="this.blur()" value="홍길동" class="input-nomal w300">
+                            </div>
+                        </div>
+                        <div class="join-info">
+                            <div class="b-item">
+                                <label for="">소속기관</label>
+                                <input type="text" readonly="readonly"  onfocus="this.blur()" value="국무조정실「청년정책조정실」" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">부서명</label>
+                                <input type="text" readonly="readonly"  onfocus="this.blur()" value="부서명" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">직장전화</label>
+                                <input type="tel" readonly="readonly"  onfocus="this.blur()" value="042-123-4567" class="input-nomal w300">
+                            </div>
+                        </div>
+                        <div class="join-info">
+                            <div class="b-item">
+                                <label for="">대표전화</label>
+                                <input type="tel" readonly="readonly"  onfocus="this.blur()" value="010-1234-5678" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">이메일</label>
+                                <input type="email" readonly="readonly"  onfocus="this.blur()" value="admin2022@email.com" class="input-nomal w300">
+                            </div>
+                            <div class="b-item">
+                                <label for="">IP주소</label>
+                                <input type="text" readonly="readonly"  onfocus="this.blur()" value="123.123.123" class="input-nomal w300">
                             </div>
                         </div>
                     </div>
                     <div class="btn-wrap form-btn-wrap">
-                        <button class="btn-wh btn-round">이전</button>
-                        <button class="btn-bl btn-round">가입완료</button>
+                        <button class="btn-wh btn-round print-btn">가입내역 인쇄</button>
+                        <button class="btn-bl btn-round">완료</button>
                     </div>
                 </div>   
                 
@@ -201,14 +165,6 @@
              </div>
          </div>
     </footer>
-    <div class="modal">
-        <div class="modal_content w460">
-          <div class="modal__title">
-            <h1>모달타이틀</h1>
-            <button class="modal-close-btn ir_pm">닫기</button>
-          </div>
-        </div>
-    </div>
     <div class="modal modal-id-check">
         <div class="modal_content w460">
             <div class="modal__title">
@@ -230,6 +186,48 @@
             <div class="btn-wrap">
                 <button class="btn-bl btn-round w200">아이디 사용하기</button>
             </div>
+        </div>
+    </div>
+    <div class="modal modal-organization-check">
+        <div class="modal_content w675">
+            <div class="modal__title">
+                <h1>기관 조회</h1>
+                <button class="modal-close-btn ir_pm">닫기</button>
+            </div>
+            <div class="input-button-wrap">
+                <input type="text" class="input-nomal" placeholder="검색어를 입력해주세요">
+                <button  type='button' class="btn-wh btn-nomal">검색</button>
+            </div>
+            <p class="table-val-num">전체 <span>1</span>건</ㅔ>
+            <table class="modal-table">
+                <caption>기관 조회 결과</caption>
+                <tr>
+                    <th class="table-check-wrap">
+                        <input type="checkbox" id="ch-all">
+                        <label for="ch-all" class="check-small"></label>
+                    </th>
+                    <th>기관명</th>
+                </tr>
+                <tr>
+                    <td class="table-check-wrap">
+                        <input type="checkbox" id="table-ch1">
+                        <label for="table-ch1" class="check-small"></label>
+                    </td>
+                    <td>국무조정실「청년정책조정실</td>
+                </tr>
+            </table>
+            <div class="btn-wrap">
+                <button class="btn-bl btn-round w200">완료</button>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal_content w460">
+            <div class="modal__title">
+                <h1>모달타이틀</h1>
+                <button class="modal-close-btn ir_pm">닫기</button>
+            </div>
+            
         </div>
     </div>
     <div class="modal modal-menu">
