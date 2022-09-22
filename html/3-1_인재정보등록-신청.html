@@ -94,7 +94,7 @@
             <h2 class="contents-title">청년인재정보 등록 신청</h2>
                 <form>
                     <div class="container">
-                        <p class="container__title">기본정보<span class="sub-inline">정부위원회, 자문단 등 각종 정책결정과정에 청년위원으로 최종 추천되기 전까지 기본정보는 공개되지 않습니다.</span></p>
+                        <p class="container__title">인적사항<span class="sub-inline">정부위원회, 자문단 등 각종 정책결정과정에 청년위원으로 최종 추천되기 전까지 기본정보는 공개되지 않습니다.</span></p>
                         <div class="box-wrap wrap-01">
                             <div>
                                 <div class="picture-img">
@@ -144,6 +144,8 @@
                                         <label for="ariaHome" class="radio-nomal">주거지</label>
                                         <input type="radio" name="aria" id="ariaOffice">
                                         <label for="ariaOffice" class="radio-nomal">직장</label>
+                                        <input type="radio" name="aria" id="ariainterest">
+                                        <label for="ariainterest" class="radio-nomal">관심지역</label>
                                         <div>
                                                 <select name="sel" id="address01" class="select-nomal w300">
                                                     <option value="선택">시/도</option>
@@ -163,78 +165,6 @@
                         </div>
                     </div>
                     <div class="container">
-                        <p class="container__title">관심 분야<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p>
-                        <div class="box-wrap wrap-02">
-                            <input type="checkbox" id="interest1">
-                            <label for="interest1" class="check-nomal">고용ㆍ노동 분야</label>
-                            <input type="checkbox" id="interest2">
-                            <label for="interest2" class="check-nomal">창업 분야</label>
-                            <input type="checkbox" id="interest3">
-                            <label for="interest3" class="check-nomal">주거ㆍ교통 분야</label>
-                            <input type="checkbox" id="interest4">
-                            <label for="interest4" class="check-nomal">교육 분야</label>
-                            <input type="checkbox" id="interest5">
-                            <label for="interest5" class="check-nomal">보건ㆍ복지ㆍ가족 분야</label>
-                            <input type="checkbox" id="interest6">
-                            <label for="interest6" class="check-nomal">금융 분야</label>
-                            <input type="checkbox" id="interest7">
-                            <label for="interest7" class="check-nomal">문화ㆍ체육ㆍ관광 분야</label>
-                            <input type="checkbox" id="interest8">
-                            <label for="interest8" class="check-nomal">인권 분야</label>
-                            <input type="checkbox" id="interest9">
-                            <label for="interest9" class="check-nomal">지역발전 분야</label>
-                            <input type="checkbox" id="interest10">
-                            <label for="interest10" class="check-nomal">기후ㆍ환경 분야</label>
-                            <input type="checkbox" id="interest11">
-                            <label for="interest11" class="check-nomal">통일ㆍ안보ㆍ치안 분야</label>
-                            <input type="checkbox" id="interest12">
-                            <label for="interest12" class="check-nomal">기타 분야</label>
-                        </div>
-                        <div class="bottom-line"></div>
-                        <p class="container__title">상세 관심 분야<span class="sub-inline">예: [주거]전월세 비용 경감, [인재양성]신기술 핵심인재 양성, [복지]자산형성지원, [기타]자원봉사 등</span></p>
-                        <div class="wrap-03 box-style">
-                            <div class="b-item">
-                                <label for="">관심분야</label>
-                                <input type="text" class="input-nomal w300" placeholder="명칭">
-                            </div>
-                            <div class="b-item">
-                                <label for="">세부내용</label>
-                                <input type="text" class="input-nomal w100p" placeholder="세부 내용을 작성해 주세요">
-                            </div>
-                        </div>
-                        <div class="btn-wrap">
-                            <button class="add-btn">분야 추가</button>
-                        </div>
-                    </div>
-                    <div class="container">
-                        <p class="container__title">참여희망 분야<span class="sub-inline">중복선택 할 수 있습니다.</span></p>
-                        <div class="b-item b-item-01 b-item-04">
-                            <label for="">기관</label>
-                            <input type="radio" name="organization" id="organization01">
-                            <label for="organization01" class="radio-nomal">중앙부처</label>
-                            <input type="radio" name="organization" id="organization02">
-                            <label for="organization02" class="radio-nomal">지방자치단체</label>
-                        </div>
-                        <div class="bottom-line"></div>
-                        <p class="container__title">참여희망 분야 종류<span class="sub-inline">중복선택 할 수 있습니다.</span></p>
-                        <div class="box-wrap wrap-02">
-                            <input type="checkbox" id="part1">
-                            <label for="part1" class="check-nomal">정부위원회</label>
-                            <input type="checkbox" id="part2">
-                            <label for="part2" class="check-nomal">정책 자문</label>
-                            <input type="checkbox" id="part3">
-                            <label for="part3" class="check-nomal">정책 홍보</label>
-                            <input type="checkbox" id="part4">
-                            <label for="part4" class="check-nomal">간담회ㆍ행사</label>
-                            <input type="checkbox" id="part5">
-                            <label for="part5" class="check-nomal">보건ㆍ복지ㆍ가족 분야</label>
-                            <input type="checkbox" id="part6">
-                            <label for="part5" class="check-nomal">기타분야</label>
-                            <input type="checkbox" id="part6">
-                            
-                        </div>
-                    </div>
-                    <div class="container">
                         <p class="container__title">학력<span class="sub-inline">재학 중을 포함하여 고등학교 이상의 학력을 기재해 주세요. 해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
                         <div class="box-wrap wrap-04 box-style">
                             <div>
@@ -242,36 +172,26 @@
                                     <label for="">학교명</label>
                                     <input type="text" class="input-nomal w300" placeholder="학교명">
                                 </div>
+                               
                                 <div class="b-item">
-                                    <label for="">학위 종류</label>
-                                    <select name="sel" id="degree" class="select-nomal w200">
-                                        <option value="선택">선택</option>
-                                        <option value="선택1">선택1</option>
-                                        <option value="선택2">선택2</option>
-                                        <option value="선택3">선택3</option>
-                                    </select>
-                                </div>
-                                <div class="b-item">
-                                    <label for="">학과/전공명</label>
+                                    <label for="" class="fit-content-lable">학과/전공명</label>
                                     <input type="text" class="input-nomal w300" placeholder="학과/전공명">
                                 </div>
                             </div>
                             <div>
                                 <div class="b-item">
-                                    <label for="">소재지</label>
-                                    <input type="text" class="input-nomal w300" placeholder="학교 소재지">
+                                    <label for="">학위 종류</label>
+                                    <div>
+                                        <select name="sel" id="degree" class="select-nomal w200">
+                                            <option value="선택">선택</option>
+                                            <option value="선택1">선택1</option>
+                                            <option value="선택2">선택2</option>
+                                            <option value="선택3">선택3</option>
+                                        </select>
+                                    </div>
                                 </div>
                                 <div class="b-item">
-                                    <label for="">졸업연도</label>
-                                    <select name="sel" id="address02" class="select-nomal w200">
-                                        <option value="선택">선택</option>
-                                        <option value="선택1">선택1</option>
-                                        <option value="선택2">선택2</option>
-                                        <option value="선택3">선택3</option>
-                                    </select>
-                                </div>
-                                <div class="b-item">
-                                    <label for="">비고</label>
+                                    <label for="">상태</label>
                                     <input type="text" class="input-nomal w300" placeholder="비고">
                                 </div>
                             </div>
@@ -322,7 +242,7 @@
                             <input type="checkbox" id="job19">
                             <label for="job19" class="check-nomal">기타</label>
                             <div class="bottom-line"></div>
-                            <p class="container__title">근무경력(전∙현직)<span class="sub-inline">해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
+                            <p class="container__title">근무경력(전∙현직)<span class="sub-inline">최근 순으로 근무경력을 기재해주세요. 해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
                             <div class="box-style wrap-05">
                                 <div>
                                     <div class="b-item">
@@ -342,10 +262,6 @@
                                     <input type="text" class="date-nomal w300 " placeholder="종료연월">
                                 </div>
                                 <div class="b-item">
-                                    <label for="">학교명</label>
-                                    <input type="text" class="input-nomal w300" placeholder="학교명">
-                                </div>
-                                <div class="b-item">
                                     <label for="">주요업무</label>
                                     <input type="text" class="input-nomal w100p" placeholder="주요업무를 작성해 주세요">
                                 </div>
@@ -356,41 +272,86 @@
                         </div>
                     </div>  
                     <div class="container">
+                        <p class="container__title">관심 분야<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p>
+                        <div class="box-wrap wrap-02">
+                            <input type="checkbox" id="interest1">
+                            <label for="interest1" class="check-nomal">고용ㆍ노동</label>
+                            <input type="checkbox" id="interest2">
+                            <label for="interest2" class="check-nomal">창업</label>
+                            <input type="checkbox" id="interest3">
+                            <label for="interest3" class="check-nomal">주거ㆍ교통</label>
+                            <input type="checkbox" id="interest4">
+                            <label for="interest4" class="check-nomal">교육</label>
+                            <input type="checkbox" id="interest13">
+                            <label for="interest13" class="check-nomal">과학기술ㆍIT</label>
+                            <input type="checkbox" id="interest4">
+                            <label for="interest5" class="check-nomal">보건ㆍ복지ㆍ가족</label>
+                            <input type="checkbox" id="interest6">
+                            <label for="interest6" class="check-nomal">금융</label>
+                            <input type="checkbox" id="interest7">
+                            <label for="interest7" class="check-nomal">문화ㆍ체육ㆍ관광</label>
+                            <input type="checkbox" id="interest8">
+                            <label for="interest8" class="check-nomal">인권</label>
+                            <input type="checkbox" id="interest9">
+                            <label for="interest9" class="check-nomal">지역발전</label>
+                            <input type="checkbox" id="interest10">
+                            <label for="interest10" class="check-nomal">기후ㆍ환경</label>
+                            <input type="checkbox" id="interest11">
+                            <label for="interest11" class="check-nomal">통일ㆍ안보ㆍ치안</label>
+                            <input type="checkbox" id="interest12">
+                            <label for="interest12" class="check-nomal">기타</label>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <p class="container__title">상세 분야<span class="sub-inline">예: [주거]전월세 비용 경감, [인재양성]신기술 핵심인재 양성, [복지]자산형성지원, [기타]자원봉사 등</span></p>
+                        <div class="wrap-03 box-style">
+                            <div class="b-item">
+                                <label for="">관심분야</label>
+                                <input type="text" class="input-nomal w300" placeholder="명칭">
+                            </div>
+                            <div class="b-item">
+                                <label for="">상세 분야</label>
+                                <input type="text" class="input-nomal w100p" placeholder="세부 내용을 작성해 주세요">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
                         <p class="container__title">주요 활동사항<span class="sub-inline">중복선택 할 수 있습니다.</span></p> 
                         <div class="box-wrap wrap-02">
                             <input type="checkbox" id="active1">
-                            <label for="active1" class="check-nomal">고용ㆍ노동 분야</label>
+                            <label for="active1" class="check-nomal">고용ㆍ노동</label>
                             <input type="checkbox" id="active2">
-                            <label for="active2" class="check-nomal">창업 분야</label>
+                            <label for="active2" class="check-nomal">창업</label>
                             <input type="checkbox" id="active3">
-                            <label for="active3" class="check-nomal">주거ㆍ교통 분야</label>
+                            <label for="active3" class="check-nomal">주거ㆍ교통</label>
                             <input type="checkbox" id="active4">
-                            <label for="active4" class="check-nomal">교육 분야</label>
+                            <label for="active4" class="check-nomal">교육</label>
                             <input type="checkbox" id="active5">
-                            <label for="active5" class="check-nomal">보건ㆍ복지ㆍ가족 분야</label>
+                            <input type="checkbox" id="active13">
+                            <label for="active13" class="check-nomal">과학기술ㆍIT</label>
+                            <label for="active5" class="check-nomal">보건ㆍ복지ㆍ가족</label>
                             <input type="checkbox" id="active6">
-                            <label for="active6" class="check-nomal">금융 분야</label>
+                            <label for="active6" class="check-nomal">금융</label>
                             <input type="checkbox" id="active7">
-                            <label for="active7" class="check-nomal">문화ㆍ체육ㆍ관광 분야</label>
+                            <label for="active7" class="check-nomal">문화ㆍ체육ㆍ관광</label>
                             <input type="checkbox" id="active8">
-                            <label for="active8" class="check-nomal">인권 분야</label>
+                            <label for="active8" class="check-nomal">인권</label>
                             <input type="checkbox" id="active9">
-                            <label for="active9" class="check-nomal">지역발전 분야</label>
+                            <label for="active9" class="check-nomal">지역발전</label>
                             <input type="checkbox" id="active10">
-                            <label for="active10" class="check-nomal">기후ㆍ환경 분야</label>
+                            <label for="active10" class="check-nomal">기후ㆍ환경</label>
                             <input type="checkbox" id="active11">
-                            <label for="active11" class="check-nomal">통일ㆍ안보ㆍ치안 분야</label>
+                            <label for="active11" class="check-nomal">통일ㆍ안보ㆍ치안</label>
                             <input type="checkbox" id="active12">
-                            <label for="active12" class="check-nomal">기타 분야</label>
+                            <label for="active12" class="check-nomal">기타</label>
                         </div>
                         <div class="bottom-line"></div>
                         <div class="box-style wrap-05 wrap-06">
                             <div>
-                                <div class="b-item">
+                                <div class="b-item w100p">
                                     <label for="">상세분야</label>
-                                    <input type="text" class="input-nomal w300 mr10" placeholder="상세 분야를 입력해 주세요">
+                                    <input type="text" class="input-nomal w300 mr10 mr0" placeholder="상세 분야를 입력해 주세요">
                                 </div>
-                                <div class="b-item b-item-06 b-item-07">
+                                <div class="b-item b-item-06 b-item-07 m0">
                                     <label for="">활동기간</label>
                                     <input type="text" class="date-nomal w200 " placeholder="날짜선택">
                                     <span>~</span>
@@ -402,7 +363,7 @@
                                 <input type="text" class="input-nomal w100p" placeholder="주요 내용을 작성해 주세요">
                             </div>
                             <div class="b-item flex-divide align-items-start">
-                               <div class="b-item">
+                               <div class="b-item fit-content">
                                     <label for="">비고</label>
                                     <input type="text" class="input-nomal w300" placeholder="비고">
                                </div>
@@ -412,39 +373,66 @@
                         <div class="btn-wrap">
                             <button class="add-btn">활동 추가</button>
                         </div>
-                    </div>  
+                    </div> 
                     <div class="container">
-                        <p class="container__title">주요 성과물<span class="sub-inline">특허 ∙ 면허 ∙ 자격증 ∙ 수상 ∙ 논문 ∙ 저서 ∙ 기고 등</span></p> 
-                        <div class="box-style wrap-05 wrap-06">
+                        <p class="container__title">주요 결과물<span class="sub-inline">특허 ∙ 면허 ∙ 자격증 ∙ 수상 ∙ 논문 ∙ 저서 ∙ 기고 등</span></p> 
+                        <div class="box-style wrap-05 wrap-06 wrap-08">
                             <div>
-                                <div class="b-item">
-                                    <label for="">제목</label>
-                                    <input type="text" class="input-nomal w600" placeholder="명칭">
-                                </div>
-                                <div class="b-item b-item-06 b-item-07">
+                                <div class="b-item b-item-06 b-item-07 w100p">
                                     <label for="">구분</label>
                                     <input type="text" class="input-nomal w300" placeholder="구분">
+                                </div>
+                                <div class="b-item b-item2">
+                                    <label for="" class="mw-cus">제목</label>
+                                    <input type="text" class="input-nomal w600" placeholder="명칭">
                                 </div>
                             </div>
                             <div>
                                 <div class="b-item w100p">
                                     <label for="">일자</label>
-                                    <input type="text" class="date-nomal w300 " placeholder="날짜선택">
+                                    <input type="text" class="date-nomal w300 " placeholder="연월 선택(발간,취득,등록,수상일)">
                                 </div>
-                                <div class="b-item b-item-06 b-item-07">
-                                    <label for="">기관명</label>
+                                <div class="b-item b-item-06 b-item-07 b-item-08">
+                                    <label for="" class="mw-cus2  fit-content-lable">발급ㆍ수여 기관</label>
                                     <input type="text" class="input-nomal w300" placeholder="발급ㆍ수여 기관명">
                                 </div>
                             </div>
                         </div>
                         <div class="btn-wrap">
-                            <button class="add-btn">성과물 추가</button>
+                            <button class="add-btn">결과물 추가</button>
+                        </div>
+                    </div> 
+                    <div class="container">
+                        <p class="container__title">참여희망 기관<span class="sub-inline">중복선택 할 수 있습니다.</span></p>
+                        <div class="b-item b-item-01 b-item-04">
+                            <input type="radio" name="organization" id="organization01">
+                            <label for="organization01" class="radio-nomal">중앙부처</label>
+                            <input type="radio" name="organization" id="organization02">
+                            <label for="organization02" class="radio-nomal">지방자치단체</label>
+                        </div>
+                        <div class="bottom-line"></div>
+                        <p class="container__title">참여희망 종류<span class="sub-inline">중복선택 할 수 있습니다.</span></p>
+                        <div class="box-wrap wrap-02">
+                            <input type="checkbox" id="part1">
+                            <label for="part1" class="check-nomal">정부위원회</label>
+                            <input type="checkbox" id="part2">
+                            <label for="part3" class="check-nomal">정책 서포터즈ㆍ기자단</label>
+                            <input type="checkbox" id="part4">
+                            <label for="part4" class="check-nomal">간담회ㆍ행사</label>
+                            <input type="checkbox" id="part5">
+                            <label for="part5" class="check-nomal">정책평가ㆍ모니터링</label>
+                            <input type="checkbox" id="part6">
+                            <label for="part5" class="check-nomal">기타분야</label>
+                            <input type="checkbox" id="part6">
+                            
                         </div>
                     </div>
                     <div class="container wrap-07">
-                        <p class="container__title">자기소개</p> 
+                        <p class="container__title">지원동기</p> 
                         <div class="box-style">
-                            <p>ㆍ귀하의 관심분야, 참여희망 분v야, 학력, 경력, 활동사항, 성과물 등을 토대로 정책결정과정에서 능력을 발휘할 수 있는 주제가 무엇인지 구체적으로 서술하여 주시기 바랍니다.<br>ㆍ자기소개서, 포트폴리오 등 추가 자료가 있을 경우 함께 첨부해 주세요.</p>
+                            <p>ㆍ기타 자기소개, 정책결정과정에 참여하고 싶은 이유 등을 자유롭게 기술해주시기 바랍니다.</p>
+                            <p>ㆍ자기소개서, 포트폴리오 등 추가 자료가 있을 경우 함께 첨부해 주세요.</p>
+                            <p>ㆍ지원동기는 최대 1000자까지 입력 가능합니다.</p>
                         </div>
                         <textarea cols="30" rows="7" class="textarea-nomal w100p  mb20" placeholder="내용을 작성해주세요"></textarea>
                         <div class="file-upload">

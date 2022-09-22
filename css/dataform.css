@@ -19,6 +19,7 @@
 .align-items-start {
     align-items: inherit;
 }
+
 .mr10 {
     margin-right: 10px;
 }
@@ -31,8 +32,32 @@
 .w600{
     width: 600px;
 }
+
 .container__title {
     margin-bottom: 20px;
+}
+.date-nomal {
+    color: #979BA4;
+}
+.date-nomal::placeholder {
+    color: #979BA4;
+}
+label.mw-cus,
+label.mw-cus2 {
+    min-width: 140px !important;
+}
+.fit-content {
+    width: auto !important;
+    display: table;
+}
+.fit-content-100p {
+    width: 100%;
+    display: table;
+}
+.fit-content-lable {
+    width: auto !important;
+    display: inline-block;
+    word-break: keep-all;
 }
 /* 첫번째 섹션 시작 */
 .wrap-01 > div:first-child {
@@ -174,6 +199,9 @@
     width: 80px;
     margin-right: 8px;
 }
+.wrap-04.box-style > div:nth-child(2)>div:first-child > div{
+    width: 300px;
+}
 /* 다섯번째 섹션 */
 .wrap-05 > div {
     width: 100%;
@@ -213,7 +241,7 @@
     border: 1px solid #1776e1;
     border-radius: 6px;
     color: #1776E1;
-    min-width: 120px;
+    min-width: 122px;
     box-sizing: border-box;
     cursor: pointer;
 }
@@ -301,17 +329,49 @@
     .wrap-04 > div {
         flex-direction: column;
     }
+    .wrap-06 > div:first-child {
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
     .wrap-06 p {
         margin-left: 90px;
+        display: table;
     }  
     .align-items-start {
-        align-items: start !important;
+        align-items: flex-start !important;
     }
     .w100p {
         width: 100% !important;
     }
+    label.mw-cus {
+        min-width: 88px !important;
+    }
 
-    
+    label.mw-cus2 {
+        min-width: fit-content !important;
+        margin-right: 30px
+    }
+    .wrap-08 > div {
+       flex-direction: column;
+    }
+   
+    .w600 {
+        width: 100%;
+    }
+    .b-item2 {
+        width: 100%;
+        margin-right: 0 !important;
+    }
+    .m0 {
+        margin: 0 !important;
+    }
+    .fit-content {
+        width: inherit !important;
+    }
+    .mr0 {
+        margin-right: 0;
+    }
+   
 } 
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 
@@ -346,7 +406,8 @@
     .b-item-01 label:nth-of-type(1) {
         width: 100%;
     }
-    .b-item-01 > label:nth-of-type(2) {
+    .b-item-01 > label:nth-of-type(2),
+    .b-item-01 > label:nth-of-type(3)  {
         margin-bottom: 10px;
     }
     .b-item-02 {
@@ -396,6 +457,9 @@
         width: 100%;
         margin-right: 0;
     }
+    .fit-content {
+        width: 100% !important;
+    }
     /* 첨부파일 */
     .file-upload {
         flex-direction: column;
@@ -404,6 +468,9 @@
         margin-bottom: 10px;
     }
     .w600 {
+        width: 100%;
+    }
+    .wrap-04.box-style > div:nth-child(2) > div:first-child > div {
         width: 100%;
     }
 }
