@@ -31,7 +31,7 @@ p{
     color: #333333;
 }
 button {
-    background: initial;
+    background: none;
 }
 .row {
     max-width: 1432px;
