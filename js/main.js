@@ -87,3 +87,16 @@ function Mobile() {
   
     $('.date-nomal').datepicker();
   });
+
+  // 모바일 메뉴 토글
+
+  $(document).ready(function(){
+		$(".menu-step1").click(function(){
+      if($(".menu-step1").hasClass("menu-on")){
+        $(".menu-step1").removeClass('menu-on')
+      }else{
+        $(".menu-step1").removeClass('menu-on')
+        $(this).toggleClass('menu-on')
+      }
+		});
+	});
