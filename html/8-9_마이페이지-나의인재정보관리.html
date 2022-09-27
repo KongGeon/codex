@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/dataform.css">
+    <link rel="stylesheet" href="/css/mypage.css">
 
 
 
@@ -70,28 +71,39 @@
     </header>
     <section id="title-banner">
         <div class="title-banner">
-            <h1>인재정보등록</h1>
+            <h1>마이페이지</h1>
             <img src="/img/img_main_bn.png" alt="배너이미지">
-        </div>
-        <div class="row">
-            <ul class="header__menu title-banner-menu">
-                <li>
-                    <a href="#" class="go-home ir_pm">홈</a>
-                </li>
-                <li class="sub-menu-ok header__step1  temp-menu1" data-menuval="1"><a href="#">메뉴</a>   
-                    <ul>
-                        <li class="header__step2 "><a href="#" >메뉴</a></li>
-                        <li class="header__step2 "><a href="#" >메뉴</a></li>
-                        <li class="header__step2 "><a href="#" >메뉴</a></li>
-                    </ul>
-                </li>
-            </ul>
         </div>
     </section>
 
     <section id="contents">
         <div class="row">
-            <h2 class="contents-title">청년인재정보 등록 신청</h2>
+            <div class="top-nab-btn btn-wrap">
+                <a href="#" class="btn-close btn-round">내 정보 관리</a>
+                <a href="#" class="btn-close btn-round">나의 인증 관리</a>
+                <a href="#" class="btn-bl btn-round">나의 인재정보 관리</a>
+                <a href="#" class="btn-close btn-round">내 정보 활용 목록</a>
+                <a href="#" class="btn-close btn-round">회원탈퇴</a>
+            </div>
+            <h2 class="contents-title">나의 인재정보 관리</h2>
+                <div class="container">
+                    <p class="container__title">인재정보 반영 현황</p>
+                    <div class="table-nomal mypage9">
+                        <div class="table-nomal-tr">
+                            <div class="table-nomal-th">최종 반영일</div>
+                            <div class="table-nomal-td">
+                                2022-07-04
+                            </div>
+                        </div>
+                        <div class="table-nomal-tr">
+                            <div class="table-nomal-th">상태</div>
+                            <div class="table-nomal-td">
+                                <!-- <p class="mypage9-compl">완료</p> -->
+                                <button class="mypage9-refusal" onclick="modalOn('modal-refusal')">거절</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <form>
                     <div class="container">
                         <p class="container__title">인적사항<span class="sub-inline">정부위원회, 자문단 등 각종 정책결정과정에 청년위원으로 최종 추천되기 전까지 기본정보는 공개되지 않습니다.</span></p>
@@ -250,6 +262,29 @@
                             <label for="job19" class="check-nomal">기타</label>
                             <div class="bottom-line"></div>
                             <p class="container__title">근무경력(전∙현직)<span class="sub-inline">최근 순으로 근무경력을 기재해주세요. 해당 사항이 없는 경우 빈 칸으로 두시고 다음 단계를 진행해 주세요.</span></p>
+                            <div class="box-style wrap-05 mb10">
+                                <div>
+                                    <div class="b-item">
+                                        <label for="">직장명</label>
+                                        <input type="text" class="input-nomal w300 mr10" placeholder="직장명">
+                                        <input type="text" class="input-nomal w300" placeholder="부서명">
+                                    </div>
+                                    <div class="b-item">
+                                        <label for="">직위</label>
+                                        <input type="text" class="input-nomal w300" placeholder="직위">
+                                    </div>
+                                </div>
+                                <div class="b-item b-item-06">
+                                    <label for="">근무기간</label>
+                                    <input type="text" class="date-nomal w300 " placeholder="시작연월">
+                                    <span>~</span>
+                                    <input type="text" class="date-nomal w300 " placeholder="종료연월">
+                                </div>
+                                <div class="b-item">
+                                    <label for="">주요업무</label>
+                                    <input type="text" class="input-nomal w100p" placeholder="주요업무를 작성해 주세요">
+                                </div>
+                            </div>
                             <div class="box-style wrap-05">
                                 <div>
                                     <div class="b-item">
@@ -309,7 +344,7 @@
                             <label for="interest12" class="check-nomal">기타</label>
                         </div>
                         <div class="bottom-line"></div>
-                        <p class="container__title">상세 분야<span class="sub-inline">예: [주거]전월세 비용 경감, [인재양성]신기술 핵심인재 양성, [복지]자산형성지원, [기타]자원봉사 등</span></p>
+                        <p class="container__title">상세 분야<span class="sub-inline">예: [주거ㆍ교통]전월세 비용 경감, [보건ㆍ복지ㆍ가족]자산형성 지원</span></p>
                         <div class="wrap-03 box-style">
                             <div class="b-item">
                                 <label for="">관심분야</label>
@@ -332,10 +367,10 @@
                             <label for="active3" class="check-nomal">주거ㆍ교통</label>
                             <input type="checkbox" id="active4">
                             <label for="active4" class="check-nomal">교육</label>
-                            <input type="checkbox" id="active13">
-                            <label for="active13" class="check-nomal">과학기술ㆍIT</label>
                             <input type="checkbox" id="active5">
-                            <label for="active5" class="check-nomal">보건ㆍ복지ㆍ가족</label>
+                            <label for="active5" class="check-nomal">과학기술ㆍIT</label>
+                            <input type="checkbox" id="active13">
+                            <label for="active13" class="check-nomal">보건ㆍ복지ㆍ가족</label>
                             <input type="checkbox" id="active6">
                             <label for="active6" class="check-nomal">금융</label>
                             <input type="checkbox" id="active7">
@@ -442,6 +477,7 @@
                         </div>
                         <textarea cols="30" rows="7" class="textarea-nomal w100p  mb10" placeholder="내용을 작성해주세요"></textarea>
                         <div class="textarea-num"><span>0</span><span>/ 1000</span></div>
+
                         <div class="file-upload">
                             <input type="file" id="fileUp">
                             <label for="fileUp" class="mr20">파일첨부</label>
@@ -468,8 +504,8 @@
                     </div>    
                 </form>
             <div class="btn-wrap form-btn-wrap">
-                <button class="btn-close btn-round">취소</button>
-                <button class="btn-bl btn-round">다음</button>
+                <button class="btn-close btn-round">초기화</button>
+                <button class="btn-bl btn-round">저장</button>
             </div>
         </div>
     </section>
@@ -502,12 +538,20 @@
              </div>
          </div>
     </footer>
-    <div class="modal">
-        <div class="modal_content w460">
+    <div class="modal modal-refusal">
+        <div class="modal_content w935">
           <div class="modal__title">
-            <h1>모달타이틀</h1>
+            <h1>반영 거절사유</h1>
             <button class="modal-close-btn ir_pm">닫기</button>
           </div>
+          <div class="table-nomal mypage9">
+            <div class="table-nomal-tr">
+                <div class="table-nomal-th">내용</div>
+                <div class="table-nomal-td">
+                    관리자가 작성한 청년의 인재정보 등록/ 수정 반영 거절사유가 노출됩니다.
+                </div>
+            </div>
+        </div>
         </div>
     </div>
     <div class="modal modal-menu">
