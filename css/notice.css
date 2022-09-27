@@ -64,7 +64,6 @@
   font-size: 16px;
   color: #333333;
   background-color: #F9FCFF;
-  list-style: 24px;
 }
 .table-wrap table thead a{
   cursor: default;
@@ -79,7 +78,6 @@
   border-bottom: 1px #ECF0F8 solid;
   font-weight: 400;
   font-size: 16px;
-  list-style: 24px;
 }
 .table-wrap table thead tr th:nth-child(1){
   width: 100px;
@@ -333,13 +331,11 @@
   height: 3px;
   background-color: #1776E1;
 }
-.post-detail{
-}
 .post-detail .post-title{
   padding: 22px 10px;
   border-bottom: 1px solid #E7EAF1;
 }
-.post-detail .post-title h1{
+.post-detail .post-title p{
   font-weight: 500;
   font-size: 20px;
   line-height: 26px;
@@ -365,7 +361,7 @@
   border-right: 1px solid #D4D9E4;
   margin: 0 40px;
 }
-.category h1{
+.category .category-title{
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
@@ -644,5 +640,8 @@
 .answer{
   padding: 30px 20px;
   background-color: #F9FCFF;
+}
+.file-download > a {
+  width: 100%;
 }
 }
