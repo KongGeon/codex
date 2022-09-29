@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/common.css">
@@ -78,7 +79,7 @@
 
     <section id="contents">
         <div class="row">
-            <h2 class="contents-title">청년인재정보 등록 신청</h2>
+            <h2 class="contents-title">회원정보 입력</h2>
                 <form>
                     <div class="container join4">
                         <div class="join4-top">
@@ -120,7 +121,7 @@
                         <div class="b-item b-item-03">
                             <label for="">전화번호</label>
                             <div>
-                                <select name="sel" id="emailId" class="select-nomal w160">
+                                <select name="sel" class="select-nomal w160">
                                     <option value="선택">선택</option>
                                     <option value="02">02</option>
                                 </select>
@@ -131,7 +132,7 @@
                         <div class="b-item b-item-03">
                             <label for="">휴대전화</label>
                             <div>
-                                <select name="sel" id="emailId" class="select-nomal w160">
+                                <select name="sel" class="select-nomal w160">
                                     <option value="선택">선택</option>
                                     <option value="010">010</option>
                                     <option value="011">011</option>
@@ -144,11 +145,18 @@
                             <label for="">이메일</label>
                             <input type="text" class="input-nomal w300 m0" placeholder="아이디">
                             <span>@</span>
+                            <input type="text" class="input-nomal w300" id="inputId" disabled>
+                                        
                             <select name="sel" id="emailId" class="select-nomal w300">
                                 <option value="선택">선택</option>
-                                <option value="선택1">선택1</option>
-                                <option value="선택2">선택2</option>
-                                <option value="선택3">선택3</option>
+                                <option value=">naver.com">naver.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="dreamwiz.com">dreamwiz.com</option>
+                                <option value="empal.com">empal.com</option>
+                                <option value="1">직접입력</option>
                             </select>
                         </div>
                         <div class="box-blue">
@@ -248,7 +256,7 @@
             </div>
             <ul class="modal-menu-list">
                 <!-- .menu-step1에 .menu-on 추가하면 메뉴 오픈됩니다 -->
-                <li class="menu-step1 menu-on">
+                <li class="menu-step1">
                     <p>청년인재데이터베이스</p>
                     <ul>
                         <li class="menu-step2"><a href="#">청년인재데이터베이스</a></li>

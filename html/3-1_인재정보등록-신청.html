@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/common.css">
@@ -131,11 +132,18 @@
                                         <label for="">이메일</label>
                                         <input type="text" class="input-nomal w300" placeholder="아이디">
                                         <span>@</span>
+                                        <input type="text" class="input-nomal w300" id="inputId" disabled>
+                                        
                                         <select name="sel" id="emailId" class="select-nomal w300">
                                             <option value="선택">선택</option>
-                                            <option value="선택1">선택1</option>
-                                            <option value="선택2">선택2</option>
-                                            <option value="선택3">선택3</option>
+                                            <option value=">naver.com">naver.com</option>
+                                            <option value="hanmail.net">hanmail.net</option>
+                                            <option value="gmail.com">gmail.com</option>
+                                            <option value="nate.com">nate.com</option>
+                                            <option value="hotmail.com">hotmail.com</option>
+                                            <option value="dreamwiz.com">dreamwiz.com</option>
+                                            <option value="empal.com">empal.com</option>
+                                            <option value="1">직접입력</option>
                                         </select>
                                     </div>
                                     <div class="b-item b-item-01 b-item-03">
@@ -204,11 +212,11 @@
                             </div>
                         </div>
                         <div class="btn-wrap">
-                            <button class="add-btn">학력 추가</button>
+                            <button type="button" class="add-btn add-btn1">학력 추가</button>
                         </div>
                         <div class="bottom-line"></div> 
                         <p class="container__title">직종 구분(전∙현직)<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p> 
-                        <div class="box-wrap wrap-02">
+                        <div class="box-wrap wrap-02 check-max-3-1">
                             <input type="checkbox" id="job1">
                             <label for="job1" class="check-nomal">일반 사무직</label>
                             <input type="checkbox" id="job2">
@@ -263,9 +271,9 @@
                                 </div>
                                 <div class="b-item b-item-06">
                                     <label for="">근무기간</label>
-                                    <input type="text" class="date-nomal w300 " placeholder="시작연월">
+                                    <input type="text" id="sdate1-1" class="date-nomal w300 " placeholder="시작연월">
                                     <span>~</span>
-                                    <input type="text" class="date-nomal w300 " placeholder="종료연월">
+                                    <input type="text" id="edate1-1" class="date-nomal w300 " placeholder="종료연월">
                                 </div>
                                 <div class="b-item">
                                     <label for="">주요업무</label>
@@ -273,13 +281,13 @@
                                 </div>
                             </div>
                             <div class="btn-wrap">
-                                <button class="add-btn">경력 추가</button>
+                                <button type="button" class="add-btn add-btn2">경력 추가</button>
                             </div>
                         </div>
                     </div>  
                     <div class="container">
                         <p class="container__title">관심 분야<span class="sub-inline">최대 3개 까지 선택할 수 있습니다.</span></p>
-                        <div class="box-wrap wrap-02">
+                        <div class="box-wrap wrap-02 check-max-3-2">
                             <input type="checkbox" id="interest1">
                             <label for="interest1" class="check-nomal">고용ㆍ노동</label>
                             <input type="checkbox" id="interest2">
@@ -359,9 +367,9 @@
                                 </div>
                                 <div class="b-item b-item-06 b-item-07 m0">
                                     <label for="">활동기간</label>
-                                    <input type="text" class="date-nomal w200 " placeholder="날짜선택">
+                                    <input type="text" id="sdate2-1" class="date-nomal w200 " placeholder="날짜선택">
                                     <span>~</span>
-                                    <input type="text" class="date-nomal w200 " placeholder="날짜선택">
+                                    <input type="text" id="edate2-1" class="date-nomal w200 " placeholder="날짜선택">
                                 </div>
                             </div>
                             <div class="b-item">
@@ -377,7 +385,7 @@
                             </div>
                         </div>
                         <div class="btn-wrap">
-                            <button class="add-btn">활동 추가</button>
+                            <button class="add-btn add-btn3" type="button" >활동 추가</button>
                         </div>
                     </div> 
                     <div class="container">
@@ -396,7 +404,7 @@
                             <div>
                                 <div class="b-item w100p">
                                     <label for="">일자</label>
-                                    <input type="text" class="date-nomal w300 " placeholder="연월 선택(발간,취득,등록,수상일)">
+                                    <input type="text" id="date3-1" class="date-nomal w300" placeholder="연월 선택(발간,취득,등록,수상일)">
                                 </div>
                                 <div class="b-item b-item-06 b-item-07 b-item-08">
                                     <label for="" class="mw-cus2  fit-content-lable">발급ㆍ수여 기관</label>
@@ -405,7 +413,7 @@
                             </div>
                         </div>
                         <div class="btn-wrap">
-                            <button class="add-btn">결과물 추가</button>
+                            <button class="add-btn add-btn4" type="button" >결과물 추가</button>
                         </div>
                     </div> 
                     <div class="container">
@@ -448,19 +456,6 @@
                                   <!-- 파일이 선택되었을 때 file-not-sel 대신 file-sel 클래스명이 들어가야 합니다.  -->
                                   <div class="file-not-sel input-nomal w100p">
                                     <p>첨부된 파일이 없습니다.</p>
-                                    <div>
-                                        <div></div>
-                                        <p>경로</p>
-                                        <button></button>
-                                    </div>
-                                </div>
-                                <div class="file-sel input-nomal w100p">
-                                    <p>첨부된 파일이 없습니다.</p>
-                                    <div>
-                                        <div></div>
-                                        <p>경로</p>
-                                        <button></button>
-                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -526,7 +521,7 @@
             </div>
             <ul class="modal-menu-list">
                 <!-- .menu-step1에 .menu-on 추가하면 메뉴 오픈됩니다 -->
-                <li class="menu-step1 menu-on">
+                <li class="menu-step1">
                     <p>청년인재데이터베이스</p>
                     <ul>
                         <li class="menu-step2"><a href="#">청년인재데이터베이스</a></li>
@@ -564,6 +559,7 @@
     <script src="http://code.jquery.com/jquery-migrate-1.2.1.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js" integrity="sha512-uto9mlQzrs59VwILcLiRYeLKPPbS/bT71da/OEBYEwcdNUk8jYIy+D176RYoop1Da+f9mvkYrmj5MCLZWEtQuA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="/js/main.js"></script>
+    <script src="/js/data.js"></script>
 </body>
 </html>
 

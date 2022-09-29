@@ -469,8 +469,9 @@
   width: 160px !important;
 }
 .faq-wrap > a{
-  display: block;
+  display: flex;
   border-bottom: 1px solid #ECF0F8;
+  box-sizing: border-box;
 }
 .faq-wrap > a:last-child{
   border-bottom: 0;
@@ -513,9 +514,15 @@
 .question.active .accoBtn{
   transform: rotate(-180deg);
 }
+
+
 .answer{
   padding: 30px 55px;
   background-color: #F9FCFF;
+  display: none;
+}
+.faq-wrap > a.active + .answer {
+  display: block;
 }
 .answer p{
   font-weight: 400;

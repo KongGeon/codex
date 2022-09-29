@@ -225,6 +225,12 @@ label.mw-cus2 {
 .wrap-04.box-style > div:nth-child(2)>div:first-child > div{
     width: 300px;
 }
+.wrap-04.box-style{
+    margin-top: 10px;
+}
+.wrap-04.box-style:nth-child(1){
+    margin-top: 0;
+}
 /* 다섯번째 섹션 */
 .wrap-05 > div {
     width: 100%;
@@ -236,6 +242,12 @@ label.mw-cus2 {
 
 .wrap-05 .b-item span {
     margin: 0 15px;
+}
+.wrap-05.box-style{
+    margin-top: 10px;
+}
+.wrap-05.box-style:nth-child(1){
+    margin-top: 0;
 }
 .wrap-06 > div .b-item:nth-child(1)  {
    width: fit-content;
@@ -295,6 +307,7 @@ label.mw-cus2 {
 }
 .file-upload .file-sel > div > div {
     width: 14px;
+    min-width: 14px;
     height: 18px;
     background: url(../img/icon-file-upload.svg) no-repeat;
     background-size: contain;
@@ -303,9 +316,15 @@ label.mw-cus2 {
 }
 .file-upload .file-sel > div > p {
     width: 100%;
+    white-space: normal;
+    display: -webkit-box;
+    -webkit-line-clamp:1 ;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 .file-upload .file-sel > div > button {
     width: 22px;
+    min-width: 22px;
     height: 22px;
     background: url(../img/icon-file-del.svg) no-repeat;
     background-size: contain;
@@ -431,6 +450,9 @@ label.mw-cus2 {
         margin-right: 0;
 
     }
+    .b-item-01 input + label{
+        text-align: center;
+    }
     .b-item-01 > label:nth-of-type(2),
     .b-item-01 > label:nth-of-type(3)  {
         margin-bottom: 10px;
@@ -438,9 +460,6 @@ label.mw-cus2 {
     }
     .b-item-02 {
         flex-wrap: wrap;
-    }
-    .b-item-02 input {
-        width: 100%;
     }
 
     .b-item-02 {
@@ -450,6 +469,10 @@ label.mw-cus2 {
     .b-item-02 input {
         width: 85%;
         margin-bottom: 10px;
+    }
+    .b-item-02 #inputId{
+        width: 100%;
+        margin-right: 0;
     }
     .b-item-02 span {
         line-height: 35px;

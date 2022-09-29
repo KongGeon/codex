@@ -77,26 +77,83 @@ function Mobile() {
   
   function modalOn(modal) {
     $('.' + modal).fadeIn();
+    if (Mobile()){// 모바일일 경우
+      $('body').css('overflow','hidden')
+    }
   }
   
   $(function () {
     //  모달
     $(".modal-close-btn").click(function () {
       $(".modal").fadeOut();
-    }); // datepicker
+      $('body').css('overflow','auto')
+    }); 
+    
+    // datepicker
   
     $('.date-nomal').datepicker();
   });
 
-  // 모바일 메뉴 토글
+
 
   $(document).ready(function(){
+
+      // 모바일 메뉴 토글
 		$(".menu-step1").click(function(){
-      if($(".menu-step1").hasClass("menu-on")){
+      if($(this).hasClass("menu-on")){
         $(".menu-step1").removeClass('menu-on')
       }else{
         $(".menu-step1").removeClass('menu-on')
-        $(this).toggleClass('menu-on')
+        $(this).addClass('menu-on')
       }
 		});
+
+    //체크박스 전체 선택 해제
+    $("#ch-all").click(function() {
+      if($("#ch-all").is(":checked")) $("input[name=table-check]").prop("checked", true);
+      else $("input[name=table-check]").prop("checked", false);
+    });
+  
+    $("input[name=table-check]").click(function() {
+      var total = $("input[name=table-check]").length;
+      var checked = $("input[name=table-check]:checked").length;
+  
+      if(total != checked) $("#ch-all").prop("checked", false);
+      else $("#ch-all").prop("checked", true); 
+    });
+
+
+    // Q&A
+    $(".question").click(function(){
+      if($(this).hasClass("active")){
+        $(".question").removeClass('active')
+      }else{
+        $(".question").removeClass('active')
+        $(this).addClass('active')
+      }
+		});
+
+
+    // 이메일 직접입력
+    $('#emailId').change(function(){
+      $("#emailId option:selected").each(function () {
+       console.log('ss');
+       
+       if($(this).val()== '1'){ //직접입력일 경우
+          $("#inputId").val('');                        //값 초기화
+          $("#inputId").attr("disabled",false); //활성화
+          $("#inputId").css("display",'block'); //활성화
+          $("#inputId").focus();
+
+       }else{ //직접입력이 아닐경우
+          // $("#inputId").val($(this).text());      //선택값 입력
+          $("#inputId").attr("disabled",true); //비활성화
+          $("#inputId").css("display",'none'); //활성화
+
+       }
+      });
+   });
 	});
+
+
+

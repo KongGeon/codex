@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/common.css">
@@ -91,7 +92,7 @@
     <section id="contents">
         <div class="row grid">
             <div class="container item col-8 m960-col-12">
-                <h2 class="contents-title">청년인재데이터베이스 소개</h2>
+                <h2 class="contents-title">청년인재데이터베이스 <span>소개</span></h2>
                 <p>
                     청년인재데이터베이스는 국가공무원법 제19조의3에 의하여 대한민국 정부의 주요직위 인선 시 우수인재를 임용할 수 있도록 공직후보자에 대한 정보를 수집하고 관리하는 국가인물정보관리 시스템입니다. <br>
 1999년 구축하여 현재 사회 각 분야 전문가 30만 여명이 수록되어 있습니다. 청년인재데이터베이스는 국가공무원법 제19조의3에 의하여 대한민국 정부의 주요직위 인선 시 우수인재를 임용할 수 있도록 공직후보자에 대한 정보를 수집하고 관리하는 국가인물정보관리 시스템입니다. <br>
@@ -103,7 +104,7 @@
                 <a href="#" class="more-btn more-btn-bl">자세히보기</a>
                 <img class="contents__img" src="/img/main-img.png" alt="소개이미지">
             </div>
-            <div class="container item col-4 m960-col-12">
+            <div class="container item col-4 m960-col-12 login-container">
                 <div class="contents-title">로그인</div>
                 <form>
                     <div class="login-wrap">
@@ -211,7 +212,7 @@
             </div>
             <ul class="modal-menu-list">
                 <!-- .menu-step1에 .menu-on 추가하면 메뉴 오픈됩니다 -->
-                <li class="menu-step1 menu-on">
+                <li class="menu-step1">
                     <p>청년인재데이터베이스</p>
                     <ul>
                         <li class="menu-step2"><a href="#">청년인재데이터베이스</a></li>

@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <link rel="stylesheet" href="/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.css" integrity="sha512-aOG0c6nPNzGk+5zjwyJaoRUgCdOrfSDhmMID2u4+OIslr0GjpLKo7Xm0Ao3xmpM4T8AmIouRkqwj1nrdVsLKEQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/common.css">
@@ -250,8 +251,15 @@
                 </tr>
                 <tr>
                     <td class="table-check-wrap">
-                        <input type="checkbox" id="table-ch1">
+                        <input type="checkbox" id="table-ch1" name="table-check">
                         <label for="table-ch1" class="check-small"></label>
+                    </td>
+                    <td>국무조정실「청년정책조정실</td>
+                </tr>
+                <tr>
+                    <td class="table-check-wrap">
+                        <input type="checkbox" id="table-ch2" name="table-check">
+                        <label for="table-ch2" class="check-small"></label>
                     </td>
                     <td>국무조정실「청년정책조정실</td>
                 </tr>
@@ -287,7 +295,7 @@
             </div>
             <ul class="modal-menu-list">
                 <!-- .menu-step1에 .menu-on 추가하면 메뉴 오픈됩니다 -->
-                <li class="menu-step1 menu-on">
+                <li class="menu-step1">
                     <p>청년인재데이터베이스</p>
                     <ul>
                         <li class="menu-step2"><a href="#">청년인재데이터베이스</a></li>

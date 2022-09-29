@@ -122,9 +122,17 @@ line-height: 26px;
 font-size: 20px;
 line-height: 30px;
 margin-bottom: 20px;
+letter-spacing: -0.04em;
 }
 .join3-title strong.color-red {
     color: #FF0000;
+}
+.check-small+label {
+    font-size: 18px;
+    line-height: 27px;
+}
+.box-blue .check-small+label {
+    font-size: 15px;
 }
 .agree-wrap {
     display: flex;
@@ -165,6 +173,10 @@ letter-spacing: -0.03em;
 
 color: #666666;
 margin-left: 20px;
+}
+.join4 .b-item .input-nomal + span:last-child {
+margin-left: 10px;
+
 }
 .join4 .box-blue{
     padding: 30px;

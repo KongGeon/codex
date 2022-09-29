@@ -11,12 +11,13 @@
     margin-right: 0;
 }
 .site-map .contents-title{
-    font-family: 'GmarketSansMedium';
+    font-family: 'Gmarket Sans';
 font-style: normal;
 display: flex;
 font-size: 22px;
 padding-bottom: 23px;
 margin-bottom: 10px;
+font-weight: 400;
 position: relative;
 }
 .contents-title {
