@@ -333,7 +333,19 @@ label.mw-cus2 {
 .form-btn-wrap{
     justify-content: center;
 }
+.required{
+    position: relative;
+    display: flex;
 
+}
+.required::after {
+    content: '';
+    width: 6px;
+    height: 6px;
+    background: url(/img/required.png) no-repeat;
+    display: block;
+    margin-left: 2px;
+}
 /* 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/ 
 @media all and (max-width:1023px) {
     .flex-divide {

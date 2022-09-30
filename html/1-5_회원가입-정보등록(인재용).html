@@ -99,21 +99,21 @@
                         <div class="bottom-line"></div>
 
                         <div class="b-item">
-                            <label for="">아이디</label>
+                            <label class="required" for="">아이디</label>
                             <div class="join4-id">
-                                <input type="text" class="input-nomal w300" placeholder="아이디 입력 후 중복확인">
+                                <input type="text" class="input-nomal w300" placeholder="아이디 입력 후 중복확인" required>
                                 <button type="button" class="btn-bl btn-nomal" onclick="modalOn('modal-id-check')">중복확인</button>
                             </div>
                             <span>영문, 숫자로 조합하여 6~12자로 사용할 수 있습니다.</span>
                         </div>
                         <div class="b-item">
-                            <label for="">비밀번호</label>
-                            <input type="password" class="input-nomal w300" placeholder="비밀번호">
+                            <label class="required" for="">비밀번호</label>
+                            <input type="password" class="input-nomal w300" placeholder="비밀번호" required>
                             <span>영문, 숫자, 특수문자로 조합하여 10~15자로 사용할 수 있습니다.(사용 가능한 특수문자: ~ ! @ # $ % ^ *)</span>
                         </div>
                         <div class="b-item">
                             <label for="" class="ir_pm">비밀번호 확인</label>
-                            <input type="password" class="input-nomal w300" placeholder="비밀번호 확인">
+                            <input type="password" class="input-nomal w300" placeholder="비밀번호 확인" required>
                             <span>비밀번호를 다시 한 번 입력합니다.</span>
                         </div>
                         <div class="bottom-line"></div>
@@ -130,25 +130,25 @@
                             </div>
                         </div>
                         <div class="b-item b-item-03">
-                            <label for="">휴대전화</label>
+                            <label class="required" for="">휴대전화</label>
                             <div>
-                                <select name="sel" class="select-nomal w160">
-                                    <option value="선택">선택</option>
+                                <select name="sel" class="select-nomal w160" required>
+                                    <option value="">선택</option>
                                     <option value="010">010</option>
                                     <option value="011">011</option>
                                 </select>
-                                <input type="number" class="input-nomal w160">
-                                <input type="number" class="input-nomal w160">
+                                <input type="number" class="input-nomal w160" required>
+                                <input type="number" class="input-nomal w160" required>
                             </div>
                         </div>
                         <div class="b-item b-item-02">
-                            <label for="">이메일</label>
-                            <input type="text" class="input-nomal w300 m0" placeholder="아이디">
+                            <label class="required" for="">이메일</label>
+                            <input type="text" class="input-nomal w300 m0" placeholder="아이디" required>
                             <span>@</span>
-                            <input type="text" class="input-nomal w300" id="inputId" disabled>
+                            <input type="text" class="input-nomal w300" id="inputId" disabled >
                                         
-                            <select name="sel" id="emailId" class="select-nomal w300">
-                                <option value="선택">선택</option>
+                            <select name="sel" id="emailId" class="select-nomal w300" required>
+                                <option value="">선택</option>
                                 <option value=">naver.com">naver.com</option>
                                 <option value="hanmail.net">hanmail.net</option>
                                 <option value="gmail.com">gmail.com</option>

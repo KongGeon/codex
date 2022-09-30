@@ -4,7 +4,10 @@
     padding: 20px 30px;
 
 }
-
+.register__bnt-wrap{
+    display: flex;
+    flex-wrap: wrap;
+}
 .box-blue p {
     text-align: center;
     color: #555555;
@@ -78,5 +81,8 @@
     .register > div {
         width: 100%;
         padding: 36px 40px;
+    }
+    .print-btn {
+        display: none;
     }
 }

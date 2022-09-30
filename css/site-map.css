@@ -35,6 +35,12 @@ position: relative;
     top: 50%;
     transform: translateY(-50%);
 }
+
+.contents-title::after {
+    width: 70px;
+}
+
+
 .site-map > a {
     display: block;
     font-size: 18px;

@@ -38,6 +38,7 @@ button {
     width: 100%;
     margin: 0 auto;
     padding: 0 16px;
+    position: relative;
 }
 select {
     -webkit-appearance:none; /* for chrome */
@@ -96,6 +97,11 @@ padding: 13px;
     line-height: 24px;
     width: 180px;
     padding: 13px;
+}
+.btn-left {
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 .btn-nomal{
     border-radius: 6px;
@@ -409,6 +415,52 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 20px;
     height: 20px;
     background: url(/img/bi_arrow-right-wh.png);
+}
+
+.print-btn {
+    border-radius: 70px;
+    padding: 10px 26px;
+    width: 180px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-right: 24px;
+}
+.print-btn::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+    background: url(/img/print2.png) no-repeat;
+
+}
+.print-btn2 {
+    position: absolute;
+    right: 0;
+    top: 70px;
+    border-radius: 70px;
+    padding: 10px 26px;
+    min-width: 160px;
+    width: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-right: 16px;
+    height: 50px;
+}
+.print-btn2::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    margin-right: 10px;
+    background: url(/img/print.png) no-repeat;
+    background-size: cover;
+
 }
 .box-blue{
     background: #F1F7FB;
@@ -1252,7 +1304,12 @@ margin-bottom: 10px;
     .go-home {
         display: none;
     }
-
+    .btn-left {
+        position: relative;
+    }
+    .two-btn-wrap button {
+        min-width: auto;
+    }
     .title-banner-menu.header__menu li:hover ul {
         display: none;
     }
@@ -1345,7 +1402,9 @@ margin-bottom: 10px;
     .modal .w675 {
         width: 100%;
     }
-    
+    .print-btn2 {
+        display: none;
+    }
 } 
 
 /* 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/ 

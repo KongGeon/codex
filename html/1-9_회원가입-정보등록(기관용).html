@@ -89,74 +89,84 @@
                             </p>
                         </div>
                         <div class="b-item">
-                            <label for="">아이디</label>
+                            <label class="required" for="">아이디</label>
                             <div class="join4-id">
-                                <input type="text" class="input-nomal w300" placeholder="아이디 입력 후 중복확인">
+                                <input type="text" class="input-nomal w300" placeholder="아이디 입력 후 중복확인" required>
                                 <button  type='button' class="btn-bl btn-nomal" onclick="modalOn('modal-id-check')">중복확인</button>
                             </div>
                             <span>영문, 숫자로 조합하여 6~12자로 사용할 수 있습니다.</span>
                         </div>
                         <div class="b-item">
-                            <label for="">비밀번호</label>
-                            <input type="password" class="input-nomal w300" placeholder="비밀번호">
+                            <label class="required" for="">비밀번호</label>
+                            <input type="password" class="input-nomal w300" placeholder="비밀번호" required>
                             <span>영문, 숫자, 특수문자로 조합하여 10~15자로 사용할 수 있습니다.(사용 가능한 특수문자: ~ ! @ # $ % ^ *)</span>
                         </div>
                         <div class="b-item">
                             <label for="" class="ir_pm">비밀번호 확인</label>
-                            <input type="password" class="input-nomal w300" placeholder="비밀번호 확인">
+                            <input type="password" class="input-nomal w300" placeholder="비밀번호 확인" required>
                             <span>비밀번호를 다시 한 번 입력합니다.</span>
                         </div>
                         <div class="bottom-line"></div>
                         <div class="b-item">
-                            <label for="">사용자명</label>
-                            <input type="text" class="input-nomal w300" placeholder="사용자명">
+                            <label class="required" for="">사용자명</label>
+                            <input type="text" class="input-nomal w300" placeholder="사용자명" required>
                             <span>반드시 실명 입력 바랍니다.</span>
                         </div>
                         <div class="b-item">
-                            <label for="">소속기관</label>
+                            <label class="required" for="">소속기관</label>
                             <div class="join4-id">
-                                <input type="text" class="input-nomal w300" placeholder="소속기관">
+                                <input type="text" class="input-nomal w300" placeholder="소속기관" required>
                                 <button  type='button' class="btn-bl btn-nomal" onclick="modalOn('modal-organization-check')">조회</button>
                             </div>
                             <span>소속기관 조회 후 선택할 수 있습니다.</span>
                         </div>
+                        <div class="b-item">
+                            <label for="">부서명</label>
+                            <input type="text" class="input-nomal w300" placeholder="부서명">
+                        </div>
                         <div class="b-item b-item-03">
-                            <label for="">전화번호</label>
+                            <label class="required" for="">전화번호</label>
                             <div>
-                                <select name="sel" id="emailId" class="select-nomal w160">
-                                    <option value="선택">선택</option>
+                                <select name="sel" class="select-nomal w160" required>
+                                    <option value="">선택</option>
                                     <option value="02">02</option>
                                 </select>
-                                <input type="number" class="input-nomal w160">
-                                <input type="number" class="input-nomal w160">
+                                <input type="number" class="input-nomal w160" required>
+                                <input type="number" class="input-nomal w160" required>
                             </div>
                         </div>
                         <div class="b-item b-item-03">
-                            <label for="">휴대전화</label>
+                            <label class="required" for="">휴대전화</label>
                             <div>
-                                <select name="sel" id="emailId" class="select-nomal w160">
-                                    <option value="선택">선택</option>
+                                <select name="sel" class="select-nomal w160" required>
+                                    <option value="">선택</option>
                                     <option value="010">010</option>
                                     <option value="011">011</option>
                                 </select>
-                                <input type="number" class="input-nomal w160">
-                                <input type="number" class="input-nomal w160">
+                                <input type="number" class="input-nomal w160" required>
+                                <input type="number" class="input-nomal w160" required>
                             </div>
                         </div>
                         <div class="b-item b-item-02">
-                            <label for="">이메일</label>
-                            <input type="text" class="input-nomal w300 m0" placeholder="아이디">
+                            <label class="required" for="">이메일</label>
+                            <input type="text" class="input-nomal w300 m0" placeholder="아이디" required>
                             <span>@</span>
-                            <select name="sel" id="emailId" class="select-nomal w300">
-                                <option value="선택">선택</option>
-                                <option value="선택1">선택1</option>
-                                <option value="선택2">선택2</option>
-                                <option value="선택3">선택3</option>
+                            <input type="text" class="input-nomal w300" id="inputId" disabled >
+                            <select name="sel" id="emailId" class="select-nomal w300" required>
+                                <option value="">선택</option>
+                                <option value=">naver.com">naver.com</option>
+                                <option value="hanmail.net">hanmail.net</option>
+                                <option value="gmail.com">gmail.com</option>
+                                <option value="nate.com">nate.com</option>
+                                <option value="hotmail.com">hotmail.com</option>
+                                <option value="dreamwiz.com">dreamwiz.com</option>
+                                <option value="empal.com">empal.com</option>
+                                <option value="1">직접입력</option>
                             </select>
                         </div>
                         <div class="b-item">
-                            <label for="">IP주소</label>
-                            <input type="text" class="input-nomal w300" placeholder="123.123.123">
+                            <label class="required" for="">IP주소</label>
+                            <input type="text" class="input-nomal w300" placeholder="123.123.123" required>
                         </div>
                         <div class="box-blue">
                             <p>※ 상기 본인은 청년인재데이터베이스에 입력하는 정보가 모두 사실이며, 허위 사실을 입력한 경우 향후 민∙형사상 책임을 질 것을 서약합니다.</p>

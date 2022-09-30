@@ -142,12 +142,14 @@ function Mobile() {
        if($(this).val()== '1'){ //직접입력일 경우
           $("#inputId").val('');                        //값 초기화
           $("#inputId").attr("disabled",false); //활성화
+          $("#inputId").attr("required",true); //필수값받도록 변경
           $("#inputId").css("display",'block'); //활성화
-          $("#inputId").focus();
+          $("#inputId").focus(); //직접입력 창 포커스
 
        }else{ //직접입력이 아닐경우
           // $("#inputId").val($(this).text());      //선택값 입력
           $("#inputId").attr("disabled",true); //비활성화
+          $("#inputId").attr("required",false); //필수값 안받도록 변경
           $("#inputId").css("display",'none'); //활성화
 
        }
