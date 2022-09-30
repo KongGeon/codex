@@ -30,7 +30,7 @@ footer{
     padding-bottom: 0;
 }
 #contents .contents-title span {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
     font-weight: 400;
 }
 #contents .contents-title::after{
@@ -132,7 +132,7 @@ margin-right: 20px;
 }
 
 .notice-date p {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansBold';
 font-style: normal;
     font-weight: 600;
 font-size: 30px;
@@ -144,7 +144,7 @@ margin-bottom: 4px;
 }
 
 .notice-date span {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
 font-style: normal;
 font-weight: 400;
 font-size: 13px;

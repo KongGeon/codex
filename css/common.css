@@ -688,7 +688,7 @@ header .row {
 }
 .header__menu .header__step1 > a {
     font-size: 19px;
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
 }
 .header__menu .header__step1 ul {
     position: absolute;
@@ -784,7 +784,7 @@ header .row {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: 600;
     font-size: 40px;
@@ -844,7 +844,7 @@ line-height: 24px;
     text-align: left;
 }
 .contents-title {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansBold';
     font-style: normal;
     font-weight: 600;
     font-size: 28px;
@@ -995,7 +995,7 @@ display: none;
     margin-bottom: 30px;
   }
   .modal__title h1 {
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
 font-style: normal;
 font-weight: 400;
 font-size: 22px;

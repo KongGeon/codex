@@ -55,7 +55,7 @@
     padding: 84px 60px;
 }
 .register__title{
-    font-family: 'Gmarket Sans';
+    font-family: 'GmarketSansMedium';
     font-weight: 500;
     font-size: 30px;
     line-height: 40px;
@@ -64,6 +64,10 @@
     margin-bottom: 20px;
     
 }
+.register__title strong{
+    font-family: 'GmarketSansBold';
+
+} 
 .register__info{
     font-weight: 400;
     font-size: 16px;
